@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Молния Инфо — Технологии</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body data-theme="light">
+  <div class="Topline_wrapper___SFz_">
+    <div class="Topline_top__lg7_J">
+      <!-- Логотип и выбор города -->
+      <div class="Topline_logo_container">
+        <div class="Topline_logo__jPjtC">
+          <img src="logo.png" alt="Молния Инфо" id="siteLogo">
+        </div>
+        <!-- Выбор города -->
+        <div class="Topline_city_selector">
+          <select class="city-select" id="citySelect">
+            <option value="kazan" selected>Казань</option>
+            <option value="spb">Санкт-Петербург</option>
+            <option value="nn">Нижний Новгород</option>
+            <option value="ekb">Екатеринбург</option>
+          </select>
+        </div>
+      </div>
+      <div class="Topline_nav_container">
+        <div class="Topline_items__PDL_N">
+          <a href="index.html" class="Topline_item__TniNA">Главная</a>
+          <a href="sport.html" class="Topline_item__TniNA">Спорт</a>
+          <a href="tech.html" class="Topline_item__TniNA active">Технологии</a>
+          <a href="culture.html" class="Topline_item__TniNA">Культура</a>
+          <a href="economy.html" class="Topline_item__TniNA">Экономика</a>
+        </div>
+        <div class="Topline_search__zZ0Eg">
+          <input type="text" placeholder="Поиск новостей..." />
+          <button type="submit">🔍</button>
+        </div>
+      </div>
+      <div class="Topline_bottomSide__3qCKr">
+        <button class="theme-toggle">☀️</button>
+      </div>
+    </div>
+
+    <!-- Нижняя строка: дата, курсы и краткая информация -->
+    <div class="Topline_bottom__d087e">
+      <div class="Topline_date___tXOh">Сегодня, 5 апреля 2025</div>
+      <div class="Topline_bottom_info">
+        <div class="FinanceWidget_wrapper__bG4Lf">
+          <span class="FinanceWidget_text__PE8Vx">Курс:</span>
+          <span class="FinanceWidget_item__ITyJP">USD <b>95.20</b></span>
+          <span class="FinanceWidget_item__ITyJP">EUR <b>102.40</b></span>
+        </div>
+        <div class="QuickInfo_wrapper">
+          <div class="QuickInfo_item">
+            <span class="QuickInfo_label">Погода</span>
+            <span class="QuickInfo_value">−6°C</span>
+          </div>
+          <div class="QuickInfo_item">
+            <span class="QuickInfo_label">Пробки</span>
+            <span class="QuickInfo_value">5/10</span>
+          </div>
+          <div class="QuickInfo_item">
+            <span class="QuickInfo_label">События</span>
+            <span class="QuickInfo_value">12</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Обертка для всего контента с лентой новостей -->
+  <div class="main-content-wrapper">
+    <!-- Основной контент (слева) -->
+    <div class="main-content">
+      <div class="container Layout_layout__sE9jW">
+        <main class="layout-main">
+      <section class="MattersBlock_topWrapper__lhO_b fade-in">
+        <article class="MatterBig_wrapper__BhMuQ">
+          <img src="{31FF7247-4EAD-4ED6-A714-92384F7FA2FD}.png" alt="Технологии" class="MatterBig_image__JzOt8">
+          <h2 class="MatterBig_title__lSQFy">AI-хабы Казани готовят открытые демо-дни</h2>
+          <div class="MatterBig_meta__DPsSp">
+            <a href="#" class="RubricTag_category__2eBld">Tech</a>
+            <span class="Rating_rating__tV72K">9.0/10</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="fade-in">
+        <div class="MattersBlock_top__m4Lrv">
+          <h2 class="MattersBlock_title__WPCPT">Проекты и стартапы</h2>
+        </div>
+        <div class="MattersBlock_middleWrapper__vE8B2">
+          <article class="MatterBig_wrapper__BhMuQ">
+            <img src="image.png" alt="Стартапы" class="MatterBig_image__JzOt8">
+            <h3 class="MatterBig_title__lSQFy">Медиа-стартапы тестируют новые форматы подкастов на русском и татарском</h3>
+            <div class="MatterBig_meta__DPsSp">
+              <a href="#" class="RubricTag_category__2eBld">Стартапы</a>
+              <span class="Rating_rating__tV72K">8.5/10</span>
+            </div>
+          </article>
+          <article class="MatterBig_wrapper__BhMuQ no-image">
+            <h3 class="MatterBig_title__lSQFy">
+              Университет запускает курс по практической робототехнике и компьютерному зрению
+            </h3>
+            <div class="MatterBig_meta__DPsSp">
+              <a href="#" class="RubricTag_category__2eBld">Образование</a>
+              <span class="Rating_rating__tV72K">8.3/10</span>
+            </div>
+          </article>
+          <article class="MatterBig_wrapper__BhMuQ">
+            <img src="{31FF7247-4EAD-4ED6-A714-92384F7FA2FD}.png" alt="Цифровизация" class="MatterBig_image__JzOt8">
+            <h3 class="MatterBig_title__lSQFy">Городские сервисы переходят на единый цифровой профиль жителей</h3>
+            <div class="MatterBig_meta__DPsSp">
+              <a href="#" class="RubricTag_category__2eBld">Цифровые сервисы</a>
+              <span class="Rating_rating__tV72K">8.7/10</span>
+            </div>
+          </article>
+          <article class="MatterBig_wrapper__BhMuQ">
+            <img src="image.png" alt="Данные" class="MatterBig_image__JzOt8">
+            <h3 class="MatterBig_title__lSQFy">Открытые данные: город опубликовал новый набор API для разработчиков</h3>
+            <div class="MatterBig_meta__DPsSp">
+              <a href="#" class="RubricTag_category__2eBld">Dev</a>
+              <span class="Rating_rating__tV72K">8.6/10</span>
+            </div>
+          </article>
+          <article class="MatterBig_wrapper__BhMuQ no-image">
+            <h3 class="MatterBig_title__lSQFy">
+              В школах тестируют модуль по безопасному поведению в сети и цифровой гигиене
+            </h3>
+            <div class="MatterBig_meta__DPsSp">
+              <a href="#" class="RubricTag_category__2eBld">EdTech</a>
+              <span class="Rating_rating__tV72K">8.1/10</span>
+            </div>
+          </article>
+          <article class="MatterBig_wrapper__BhMuQ">
+            <img src="{31FF7247-4EAD-4ED6-A714-92384F7FA2FD}.png" alt="Технологии" class="MatterBig_image__JzOt8">
+            <h3 class="MatterBig_title__lSQFy">Искусственный интеллект помогает оптимизировать городскую инфраструктуру</h3>
+            <div class="MatterBig_meta__DPsSp">
+              <a href="#" class="RubricTag_category__2eBld">AI</a>
+              <span class="Rating_rating__tV72K">8.8/10</span>
+            </div>
+          </article>
+          <article class="MatterBig_wrapper__BhMuQ no-image">
+            <h3 class="MatterBig_title__lSQFy">
+              Разработчики создают новые инструменты для городских сервисов
+            </h3>
+            <div class="MatterBig_meta__DPsSp">
+              <a href="#" class="RubricTag_category__2eBld">Разработка</a>
+              <span class="Rating_rating__tV72K">8.4/10</span>
+            </div>
+          </article>
+        </div>
+      </section>
+        </main>
+      </div>
+    </div>
+
+    <!-- Правая колонка: лента новостей -->
+    <aside class="news-sidebar slide-in-right">
+      <div class="news-sidebar__header">
+        <div>
+          <span class="news-sidebar__label">Лента</span>
+          <h2 class="news-sidebar__title">Tech‑лента</h2>
+        </div>
+        <button class="news-sidebar__toggle" id="toggleNews">Скрыть</button>
+      </div>
+      <div class="news-feed">
+        <article class="news-item"><time class="news-item__time">10:18</time><h3 class="news-item__title">Запустили серию митапов для дизайнеров и фронтендеров</h3></article>
+        <article class="news-item"><time class="news-item__time">09:46</time><h3 class="news-item__title">Новый сервис записи к врачу получил обновлённый интерфейс</h3></article>
+        <article class="news-item"><time class="news-item__time">09:12</time><h3 class="news-item__title">В IT‑парке стартует акселератор медиа‑продуктов</h3></article>
+        <article class="news-item"><time class="news-item__time">08:40</time><h3 class="news-item__title">Город тестирует умные остановки с подогревом</h3></article>
+        <button class="MattersBlock_more__GsimI news-feed__more" id="moreNews">Ещё новости</button>
+      </div>
+      <div class="sidebar-widgets">
+        <section class="widget">
+          <h3 class="widget__title">Топ‑темы</h3>
+          <div class="chips">
+            <span class="chip">AI</span>
+            <span class="chip">Дизайн</span>
+            <span class="chip">Городские сервисы</span>
+            <span class="chip">Dev</span>
+          </div>
+        </section>
+      </div>
+    </aside>
+    <button class="news-reveal" id="revealNews" aria-label="Показать ленту">Лента</button>
+  </div>
+
+  <!-- Модальное окно для новостей -->
+  <div class="news-modal" id="newsModal">
+    <div class="news-modal__overlay"></div>
+    <div class="news-modal__content">
+      <button class="news-modal__close" id="closeModal">×</button>
+      <div class="news-modal__image-container" id="modalImageContainer"></div>
+      <div class="news-modal__body">
+        <div class="news-modal__meta" id="modalMeta"></div>
+        <h2 class="news-modal__title" id="modalTitle"></h2>
+        <div class="news-modal__text" id="modalText"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const body = document.body;
+    
+    // Функция установки размеров логотипа
+    function setLogoSize(logo) {
+      if (logo) {
+        logo.style.height = '50px';
+        logo.style.width = '200px';
+        logo.style.minHeight = '50px';
+        logo.style.minWidth = '200px';
+        logo.style.maxHeight = '50px';
+        logo.style.maxWidth = '200px';
+        logo.style.objectFit = 'contain';
+        logo.style.objectPosition = 'left center';
+      }
+    }
+
+    // Функция обновления логотипа в зависимости от темы
+    function updateLogo() {
+      const logo = document.getElementById('siteLogo');
+      const isLight = body.getAttribute('data-theme') === 'light';
+      if (logo) {
+        logo.src = isLight ? 'logo.png' : 'alt_logo.png';
+        setLogoSize(logo);
+        logo.onload = function() {
+          setLogoSize(logo);
+        };
+      }
+    }
+
+    // Загружаем сохранённую тему при загрузке страницы
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    body.setAttribute('data-theme', savedTheme);
+    updateLogo();
+
+    // Переключение темы
+    const themeToggle = document.querySelector('.theme-toggle');
+    themeToggle?.addEventListener('click', () => {
+      const isLight = body.getAttribute('data-theme') === 'light';
+      const newTheme = isLight ? 'dark' : 'light';
+      body.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      themeToggle.textContent = isLight ? '🌙' : '☀️';
+      updateLogo();
+    });
+
+    const newsSidebar = document.querySelector('.news-sidebar');
+    const toggleNewsBtn = document.getElementById('toggleNews');
+    const moreNewsBtn = document.getElementById('moreNews');
+    const revealNewsBtn = document.getElementById('revealNews');
+    const newsFeed = document.querySelector('.news-feed');
+
+    const newsBatches = [
+      [
+        { time: '10:18', title: 'Запустили серию митапов для дизайнеров и фронтендеров' },
+        { time: '09:46', title: 'Новый сервис записи к врачу получил обновлённый интерфейс' },
+        { time: '09:12', title: 'В IT‑парке стартует акселератор медиа‑продуктов' },
+        { time: '08:40', title: 'Город тестирует умные остановки с подогревом' },
+      ],
+      [
+        { time: '10:28', title: 'Университет открыл лабораторию компьютерного зрения' },
+        { time: '09:55', title: 'Разработчики получили новый набор API открытых данных' },
+        { time: '09:26', title: 'Стартапы тестируют локальные медиа‑подписки' },
+        { time: '08:52', title: 'В школах стартовал модуль по цифровой гигиене' },
+      ],
+      [
+        { time: '10:33', title: 'Городские сервисы объединяют вход через единый профиль' },
+        { time: '10:01', title: 'Пилот eSIM в муниципальных сервисах расширяют на районы' },
+        { time: '09:31', title: 'Стартовал конкурс микрогрантов для дизайнеров интерфейсов' },
+        { time: '08:45', title: 'Новый коворкинг открылся рядом с технопарком' },
+      ],
+    ];
+    let currentBatch = 0;
+
+    function renderNews(batchIndex) {
+      const batch = newsBatches[batchIndex];
+      if (!batch || !newsFeed) return;
+      const moreBtn = newsFeed.querySelector('.news-feed__more');
+      newsFeed.innerHTML = batch
+        .map(
+          (item) => `
+            <article class="news-item">
+              <time class="news-item__time">${item.time}</time>
+              <h3 class="news-item__title">${item.title}</h3>
+            </article>
+          `
+        )
+        .join('');
+      newsFeed.appendChild(moreBtn);
+    }
+
+    toggleNewsBtn?.addEventListener('click', () => {
+      const hidden = newsSidebar.classList.toggle('news-sidebar--hidden');
+      toggleNewsBtn.textContent = hidden ? 'Показать' : 'Скрыть';
+      const mainContentWrapper = document.querySelector('.main-content-wrapper');
+      if (hidden) {
+        revealNewsBtn?.classList.add('visible');
+        mainContentWrapper?.classList.add('news-sidebar-hidden');
+      } else {
+        revealNewsBtn?.classList.remove('visible');
+        mainContentWrapper?.classList.remove('news-sidebar-hidden');
+      }
+    });
+
+    revealNewsBtn?.addEventListener('click', () => {
+      newsSidebar.classList.remove('news-sidebar--hidden');
+      toggleNewsBtn.textContent = 'Скрыть';
+      revealNewsBtn.classList.remove('visible');
+      const mainContentWrapper = document.querySelector('.main-content-wrapper');
+      mainContentWrapper?.classList.remove('news-sidebar-hidden');
+    });
+
+    moreNewsBtn?.addEventListener('click', () => {
+      currentBatch = (currentBatch + 1) % newsBatches.length;
+      renderNews(currentBatch);
+    });
+
+    // Модальное окно для новостных блоков
+    const newsModal = document.getElementById('newsModal');
+    const closeModalBtn = document.getElementById('closeModal');
+    const modalImageContainer = document.getElementById('modalImageContainer');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalText = document.getElementById('modalText');
+    const modalMeta = document.getElementById('modalMeta');
+
+    const newsArticles = document.querySelectorAll('.MatterBig_wrapper__BhMuQ');
+
+    function openNewsModal(article) {
+      const img = article.querySelector('.MatterBig_image__JzOt8');
+      const title = article.querySelector('.MatterBig_title__lSQFy');
+      const meta = article.querySelector('.MatterBig_meta__DPsSp');
+
+      if (img) {
+        modalImageContainer.innerHTML = `<img src="${img.src}" alt="${img.alt}" class="news-modal__image">`;
+      } else {
+        modalImageContainer.innerHTML = '';
+      }
+
+      modalTitle.textContent = title?.textContent || '';
+      
+      if (meta) {
+        modalMeta.innerHTML = meta.innerHTML;
+      } else {
+        modalMeta.innerHTML = '';
+      }
+
+      const fullTexts = {
+        'AI-хабы Казани готовят открытые демо-дни': 'Центры искусственного интеллекта в Казани готовят серию открытых демонстрационных дней. Посетители смогут увидеть последние разработки в области AI и пообщаться с разработчиками.',
+        'Медиа-стартапы тестируют новые форматы подкастов на русском и татарском': 'Медиа-стартапы экспериментируют с новыми форматами подкастов, создавая контент на русском и татарском языках. Это расширяет аудиторию и сохраняет культурное разнообразие.',
+        'Университет запускает курс по практической робототехнике и компьютерному зрению': 'Университет запускает новый практический курс, который познакомит студентов с современными технологиями робототехники и компьютерного зрения.',
+        'Городские сервисы переходят на единый цифровой профиль жителей': 'Единый цифровой профиль упростит доступ к городским сервисам и позволит персонализировать услуги для каждого жителя.',
+        'Открытые данные: город опубликовал новый набор API для разработчиков': 'Новый набор открытых данных и API позволит разработчикам создавать полезные приложения для жителей города.',
+        'В школах тестируют модуль по безопасному поведению в сети и цифровой гигиене': 'Образовательный модуль поможет школьникам безопасно использовать интернет и защитить свои данные.',
+        'Искусственный интеллект помогает оптимизировать городскую инфраструктуру': 'AI-системы анализируют данные о движении транспорта и помогают оптимизировать работу городской инфраструктуры.',
+        'Разработчики создают новые инструменты для городских сервисов': 'Местные разработчики создают инновационные инструменты, которые улучшают качество городских сервисов.'
+      };
+
+      const articleTitle = title?.textContent.trim() || '';
+      modalText.textContent = fullTexts[articleTitle] || 'Подробная информация о событии будет доступна в ближайшее время. Следите за обновлениями на нашем сайте.';
+
+      newsModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeNewsModal() {
+      newsModal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    newsArticles.forEach(article => {
+      article.addEventListener('click', (e) => {
+        e.preventDefault();
+        openNewsModal(article);
+      });
+    });
+
+    closeModalBtn?.addEventListener('click', closeNewsModal);
+    newsModal?.querySelector('.news-modal__overlay')?.addEventListener('click', closeNewsModal);
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && newsModal.classList.contains('active')) {
+        closeNewsModal();
+      }
+    });
+  </script>
+</body>
+</html>

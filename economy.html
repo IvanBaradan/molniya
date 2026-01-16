@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Молния Инфо — Экономика</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body data-theme="light">
+  <div class="Topline_wrapper___SFz_">
+    <div class="Topline_top__lg7_J">
+      <!-- Логотип и выбор города -->
+      <div class="Topline_logo_container">
+        <div class="Topline_logo__jPjtC">
+          <img src="logo.png" alt="Молния Инфо" id="siteLogo">
+        </div>
+        <!-- Выбор города -->
+        <div class="Topline_city_selector">
+          <select class="city-select" id="citySelect">
+            <option value="kazan" selected>Казань</option>
+            <option value="spb">Санкт-Петербург</option>
+            <option value="nn">Нижний Новгород</option>
+            <option value="ekb">Екатеринбург</option>
+          </select>
+        </div>
+      </div>
+      <div class="Topline_nav_container">
+        <div class="Topline_items__PDL_N">
+          <a href="index.html" class="Topline_item__TniNA">Главная</a>
+          <a href="sport.html" class="Topline_item__TniNA">Спорт</a>
+          <a href="tech.html" class="Topline_item__TniNA">Технологии</a>
+          <a href="culture.html" class="Topline_item__TniNA">Культура</a>
+          <a href="economy.html" class="Topline_item__TniNA active">Экономика</a>
+        </div>
+        <div class="Topline_search__zZ0Eg">
+          <input type="text" placeholder="Поиск новостей..." />
+          <button type="submit">🔍</button>
+        </div>
+      </div>
+      <div class="Topline_bottomSide__3qCKr">
+        <button class="theme-toggle">☀️</button>
+      </div>
+    </div>
+
+    <!-- Нижняя строка: дата, курсы и краткая информация -->
+    <div class="Topline_bottom__d087e">
+      <div class="Topline_date___tXOh">Сегодня, 5 апреля 2025</div>
+      <div class="Topline_bottom_info">
+        <div class="FinanceWidget_wrapper__bG4Lf">
+          <span class="FinanceWidget_text__PE8Vx">Курс:</span>
+          <span class="FinanceWidget_item__ITyJP">USD <b>95.20</b></span>
+          <span class="FinanceWidget_item__ITyJP">EUR <b>102.40</b></span>
+        </div>
+        <div class="QuickInfo_wrapper">
+          <div class="QuickInfo_item">
+            <span class="QuickInfo_label">Погода</span>
+            <span class="QuickInfo_value">−6°C</span>
+          </div>
+          <div class="QuickInfo_item">
+            <span class="QuickInfo_label">Пробки</span>
+            <span class="QuickInfo_value">5/10</span>
+          </div>
+          <div class="QuickInfo_item">
+            <span class="QuickInfo_label">События</span>
+            <span class="QuickInfo_value">12</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Обертка для всего контента с лентой новостей -->
+  <div class="main-content-wrapper">
+    <!-- Основной контент (слева) -->
+    <div class="main-content">
+      <div class="container Layout_layout__sE9jW">
+        <main class="layout-main">
+      <section class="MattersBlock_topWrapper__lhO_b fade-in">
+        <article class="MatterBig_wrapper__BhMuQ">
+          <img src="image.png" alt="Экономика" class="MatterBig_image__JzOt8">
+          <h2 class="MatterBig_title__lSQFy">Татарстан усиливает поддержку малого бизнеса и креативных индустрий</h2>
+          <div class="MatterBig_meta__DPsSp">
+            <a href="#" class="RubricTag_category__2eBld">Бизнес</a>
+            <span class="Rating_rating__tV72K">8.8/10</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="fade-in">
+        <div class="MattersBlock_top__m4Lrv">
+          <h2 class="MattersBlock_title__WPCPT">Инвестиции и цифра</h2>
+        </div>
+        <div class="MattersBlock_middleWrapper__vE8B2">
+          <article class="MatterBig_wrapper__BhMuQ">
+            <img src="{31FF7247-4EAD-4ED6-A714-92384F7FA2FD}.png" alt="Инвестиции" class="MatterBig_image__JzOt8">
+            <h3 class="MatterBig_title__lSQFy">Региональные фонды запускают программы для технологических команд</h3>
+            <div class="MatterBig_meta__DPsSp">
+              <a href="#" class="RubricTag_category__2eBld">Инвестиции</a>
+              <span class="Rating_rating__tV72K">8.5/10</span>
+            </div>
+          </article>
+          <article class="MatterBig_wrapper__BhMuQ no-image">
+            <h3 class="MatterBig_title__lSQFy">
+              Цифровые сервисы для предпринимателей объединяют документооборот и финансы в одном окне
+            </h3>
+            <div class="MatterBig_meta__DPsSp">
+              <a href="#" class="RubricTag_category__2eBld">Сервисы</a>
+              <span class="Rating_rating__tV72K">8.3/10</span>
+            </div>
+          </article>
+          <article class="MatterBig_wrapper__BhMuQ">
+            <img src="image.png" alt="Гранты" class="MatterBig_image__JzOt8">
+            <h3 class="MatterBig_title__lSQFy">Малый бизнес получает гранты на цифровизацию: как подать заявку</h3>
+            <div class="MatterBig_meta__DPsSp">
+              <a href="#" class="RubricTag_category__2eBld">Гранты</a>
+              <span class="Rating_rating__tV72K">8.4/10</span>
+            </div>
+          </article>
+          <article class="MatterBig_wrapper__BhMuQ">
+            <img src="{31FF7247-4EAD-4ED6-A714-92384F7FA2FD}.png" alt="Рынок" class="MatterBig_image__JzOt8">
+            <h3 class="MatterBig_title__lSQFy">Новые рабочие места: региональные компании расширяют команды</h3>
+            <div class="MatterBig_meta__DPsSp">
+              <a href="#" class="RubricTag_category__2eBld">Рынок труда</a>
+              <span class="Rating_rating__tV72K">8.1/10</span>
+            </div>
+          </article>
+          <article class="MatterBig_wrapper__BhMuQ no-image">
+            <h3 class="MatterBig_title__lSQFy">
+              Эксперты объяснили, как подготовить проект к гранту: чек‑лист для предпринимателей
+            </h3>
+            <div class="MatterBig_meta__DPsSp">
+              <a href="#" class="RubricTag_category__2eBld">Разбор</a>
+              <span class="Rating_rating__tV72K">8.0/10</span>
+            </div>
+          </article>
+          <article class="MatterBig_wrapper__BhMuQ">
+            <img src="image.png" alt="Экономика" class="MatterBig_image__JzOt8">
+            <h3 class="MatterBig_title__lSQFy">Рынок труда: какие специалисты востребованы в Казани</h3>
+            <div class="MatterBig_meta__DPsSp">
+              <a href="#" class="RubricTag_category__2eBld">Рынок труда</a>
+              <span class="Rating_rating__tV72K">8.2/10</span>
+            </div>
+          </article>
+          <article class="MatterBig_wrapper__BhMuQ no-image">
+            <h3 class="MatterBig_title__lSQFy">
+              Бизнес-инкубаторы помогают молодым предпринимателям запускать проекты
+            </h3>
+            <div class="MatterBig_meta__DPsSp">
+              <a href="#" class="RubricTag_category__2eBld">Поддержка</a>
+              <span class="Rating_rating__tV72K">8.1/10</span>
+            </div>
+          </article>
+        </div>
+      </section>
+        </main>
+      </div>
+    </div>
+
+    <!-- Правая колонка: лента новостей -->
+    <aside class="news-sidebar slide-in-right">
+      <div class="news-sidebar__header">
+        <div>
+          <span class="news-sidebar__label">Лента</span>
+          <h2 class="news-sidebar__title">Экономика сейчас</h2>
+        </div>
+        <button class="news-sidebar__toggle" id="toggleNews">Скрыть</button>
+      </div>
+      <div class="news-feed">
+        <article class="news-item"><time class="news-item__time">10:14</time><h3 class="news-item__title">Программа грантов на цифровизацию открыла приём заявок</h3></article>
+        <article class="news-item"><time class="news-item__time">09:36</time><h3 class="news-item__title">Компании расширяют найм в IT и медиа</h3></article>
+        <article class="news-item"><time class="news-item__time">09:05</time><h3 class="news-item__title">Сервисы для бизнеса объединили документы и финансы</h3></article>
+        <article class="news-item"><time class="news-item__time">08:42</time><h3 class="news-item__title">Открыли новый коворкинг рядом с технопарком</h3></article>
+        <button class="MattersBlock_more__GsimI news-feed__more" id="moreNews">Ещё новости</button>
+      </div>
+      <div class="sidebar-widgets">
+        <section class="widget">
+          <h3 class="widget__title">Топ‑темы</h3>
+          <div class="chips">
+            <span class="chip">Гранты</span>
+            <span class="chip">Бизнес</span>
+            <span class="chip">Инвестиции</span>
+            <span class="chip">Рынок труда</span>
+          </div>
+        </section>
+        <section class="widget">
+          <h3 class="widget__title">Коротко</h3>
+          <div class="mini-list">
+            <div class="mini-row"><span>USD</span><b>95.20</b></div>
+            <div class="mini-row"><span>EUR</span><b>102.40</b></div>
+            <div class="mini-row"><span>Сделки</span><b>7</b></div>
+          </div>
+        </section>
+      </div>
+    </aside>
+    <button class="news-reveal" id="revealNews" aria-label="Показать ленту">Лента</button>
+  </div>
+
+  <!-- Модальное окно для новостей -->
+  <div class="news-modal" id="newsModal">
+    <div class="news-modal__overlay"></div>
+    <div class="news-modal__content">
+      <button class="news-modal__close" id="closeModal">×</button>
+      <div class="news-modal__image-container" id="modalImageContainer"></div>
+      <div class="news-modal__body">
+        <div class="news-modal__meta" id="modalMeta"></div>
+        <h2 class="news-modal__title" id="modalTitle"></h2>
+        <div class="news-modal__text" id="modalText"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const body = document.body;
+    
+    // Функция установки размеров логотипа
+    function setLogoSize(logo) {
+      if (logo) {
+        logo.style.height = '50px';
+        logo.style.width = '200px';
+        logo.style.minHeight = '50px';
+        logo.style.minWidth = '200px';
+        logo.style.maxHeight = '50px';
+        logo.style.maxWidth = '200px';
+        logo.style.objectFit = 'contain';
+        logo.style.objectPosition = 'left center';
+      }
+    }
+
+    // Функция обновления логотипа в зависимости от темы
+    function updateLogo() {
+      const logo = document.getElementById('siteLogo');
+      const isLight = body.getAttribute('data-theme') === 'light';
+      if (logo) {
+        logo.src = isLight ? 'logo.png' : 'alt_logo.png';
+        setLogoSize(logo);
+        logo.onload = function() {
+          setLogoSize(logo);
+        };
+      }
+    }
+
+    // Загружаем сохранённую тему при загрузке страницы
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    body.setAttribute('data-theme', savedTheme);
+    updateLogo();
+
+    // Переключение темы
+    const themeToggle = document.querySelector('.theme-toggle');
+    themeToggle?.addEventListener('click', () => {
+      const isLight = body.getAttribute('data-theme') === 'light';
+      const newTheme = isLight ? 'dark' : 'light';
+      body.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      themeToggle.textContent = isLight ? '🌙' : '☀️';
+      updateLogo();
+    });
+
+    const newsSidebar = document.querySelector('.news-sidebar');
+    const toggleNewsBtn = document.getElementById('toggleNews');
+    const moreNewsBtn = document.getElementById('moreNews');
+    const revealNewsBtn = document.getElementById('revealNews');
+    const newsFeed = document.querySelector('.news-feed');
+
+    const newsBatches = [
+      [
+        { time: '10:14', title: 'Программа грантов на цифровизацию открыла приём заявок' },
+        { time: '09:36', title: 'Компании расширяют найм в IT и медиа' },
+        { time: '09:05', title: 'Сервисы для бизнеса объединили документы и финансы' },
+        { time: '08:42', title: 'Открыли новый коворкинг рядом с технопарком' },
+      ],
+      [
+        { time: '10:24', title: 'Региональные фонды запускают программу для технологических команд' },
+        { time: '09:49', title: 'Малый бизнес получает поддержку на маркетинг и упаковку' },
+        { time: '09:17', title: 'Эксперты разобрали типичные ошибки в заявках на грант' },
+        { time: '08:56', title: 'Креативные индустрии растут: спрос на дизайнеров увеличился' },
+      ],
+      [
+        { time: '10:31', title: 'Город обновил сервисы для предпринимателей в одном окне' },
+        { time: '10:02', title: 'Новые вакансии: компании ищут продакт‑ и UX‑специалистов' },
+        { time: '09:33', title: 'Стартовал конкурс микрогрантов для креативных проектов' },
+        { time: '08:50', title: 'Бизнес‑сообщество проведёт открытые консультации для новичков' },
+      ],
+    ];
+    let currentBatch = 0;
+
+    function renderNews(batchIndex) {
+      const batch = newsBatches[batchIndex];
+      if (!batch || !newsFeed) return;
+      const moreBtn = newsFeed.querySelector('.news-feed__more');
+      newsFeed.innerHTML = batch
+        .map(
+          (item) => `
+            <article class="news-item">
+              <time class="news-item__time">${item.time}</time>
+              <h3 class="news-item__title">${item.title}</h3>
+            </article>
+          `
+        )
+        .join('');
+      newsFeed.appendChild(moreBtn);
+    }
+
+    toggleNewsBtn?.addEventListener('click', () => {
+      const hidden = newsSidebar.classList.toggle('news-sidebar--hidden');
+      toggleNewsBtn.textContent = hidden ? 'Показать' : 'Скрыть';
+      const mainContentWrapper = document.querySelector('.main-content-wrapper');
+      if (hidden) {
+        revealNewsBtn?.classList.add('visible');
+        mainContentWrapper?.classList.add('news-sidebar-hidden');
+      } else {
+        revealNewsBtn?.classList.remove('visible');
+        mainContentWrapper?.classList.remove('news-sidebar-hidden');
+      }
+    });
+
+    revealNewsBtn?.addEventListener('click', () => {
+      newsSidebar.classList.remove('news-sidebar--hidden');
+      toggleNewsBtn.textContent = 'Скрыть';
+      revealNewsBtn.classList.remove('visible');
+      const mainContentWrapper = document.querySelector('.main-content-wrapper');
+      mainContentWrapper?.classList.remove('news-sidebar-hidden');
+    });
+
+    moreNewsBtn?.addEventListener('click', () => {
+      currentBatch = (currentBatch + 1) % newsBatches.length;
+      renderNews(currentBatch);
+    });
+
+    // Модальное окно для новостных блоков
+    const newsModal = document.getElementById('newsModal');
+    const closeModalBtn = document.getElementById('closeModal');
+    const modalImageContainer = document.getElementById('modalImageContainer');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalText = document.getElementById('modalText');
+    const modalMeta = document.getElementById('modalMeta');
+
+    const newsArticles = document.querySelectorAll('.MatterBig_wrapper__BhMuQ');
+
+    function openNewsModal(article) {
+      const img = article.querySelector('.MatterBig_image__JzOt8');
+      const title = article.querySelector('.MatterBig_title__lSQFy');
+      const meta = article.querySelector('.MatterBig_meta__DPsSp');
+
+      if (img) {
+        modalImageContainer.innerHTML = `<img src="${img.src}" alt="${img.alt}" class="news-modal__image">`;
+      } else {
+        modalImageContainer.innerHTML = '';
+      }
+
+      modalTitle.textContent = title?.textContent || '';
+      
+      if (meta) {
+        modalMeta.innerHTML = meta.innerHTML;
+      } else {
+        modalMeta.innerHTML = '';
+      }
+
+      const fullTexts = {
+        'Татарстан усиливает поддержку малого бизнеса и креативных индустрий': 'Региональные власти расширяют программы поддержки малого бизнеса и креативных индустрий. Новые меры включают налоговые льготы, гранты и консультационную поддержку.',
+        'Региональные фонды запускают программы для технологических команд': 'Инвестиционные фонды запускают специальные программы для технологических стартапов. Команды могут получить финансирование и менторскую поддержку.',
+        'Цифровые сервисы для предпринимателей объединяют документооборот и финансы в одном окне': 'Единая платформа для предпринимателей упрощает работу с документами и финансами, позволяя управлять бизнесом из одного интерфейса.',
+        'Малый бизнес получает гранты на цифровизацию: как подать заявку': 'Программа грантов помогает малому бизнесу внедрять цифровые технологии. Заявки принимаются до конца месяца.',
+        'Новые рабочие места: региональные компании расширяют команды': 'Экономический рост создаёт новые рабочие места. Компании активно нанимают специалистов в IT, медиа и других сферах.',
+        'Эксперты объяснили, как подготовить проект к гранту: чек‑лист для предпринимателей': 'Эксперты поделились подробным чек-листом по подготовке заявок на гранты. Правильная подготовка значительно увеличивает шансы на успех.',
+        'Рынок труда: какие специалисты востребованы в Казани': 'Анализ рынка труда показывает растущий спрос на специалистов в сфере IT, дизайна и цифровых технологий.',
+        'Бизнес-инкубаторы помогают молодым предпринимателям запускать проекты': 'Бизнес-инкубаторы предоставляют комплексную поддержку молодым предпринимателям, включая офисные помещения, менторство и доступ к инвестициям.'
+      };
+
+      const articleTitle = title?.textContent.trim() || '';
+      modalText.textContent = fullTexts[articleTitle] || 'Подробная информация о событии будет доступна в ближайшее время. Следите за обновлениями на нашем сайте.';
+
+      newsModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeNewsModal() {
+      newsModal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    newsArticles.forEach(article => {
+      article.addEventListener('click', (e) => {
+        e.preventDefault();
+        openNewsModal(article);
+      });
+    });
+
+    closeModalBtn?.addEventListener('click', closeNewsModal);
+    newsModal?.querySelector('.news-modal__overlay')?.addEventListener('click', closeNewsModal);
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && newsModal.classList.contains('active')) {
+        closeNewsModal();
+      }
+    });
+  </script>
+</body>
+</html>

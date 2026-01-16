@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Молния Инфо — Главные новости</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body data-theme="light">
+  <!-- Шапка сайта -->
+  <div class="Topline_wrapper___SFz_">
+    <div class="Topline_top__lg7_J">
+      <!-- Логотип -->
+      <div class="Topline_logo_container">
+        <div class="Topline_logo__jPjtC">
+          <img src="logo.png" alt="Молния Инфо" id="siteLogo">
+        </div>
+      </div>
+
+      <!-- Центр: меню -->
+      <div class="Topline_nav_container">
+        <!-- Навигация -->
+        <div class="Topline_items__PDL_N">
+          <a href="index.html" class="Topline_item__TniNA active">Главная</a>
+          <a href="sport.html" class="Topline_item__TniNA">Спорт</a>
+          <a href="tech.html" class="Topline_item__TniNA">Технологии</a>
+          <a href="culture.html" class="Topline_item__TniNA">Культура</a>
+          <a href="economy.html" class="Topline_item__TniNA">Экономика</a>
+        </div>
+      </div>
+
+      <!-- Правый блок: тема -->
+      <div class="Topline_bottomSide__3qCKr">
+        <button class="theme-toggle" aria-label="Переключить тему"></button>
+      </div>
+    </div>
+
+    <!-- Нижняя строка: дата, курсы и краткая информация -->
+    <div class="Topline_bottom__d087e">
+      <div class="Topline_date___tXOh">Сегодня, 5 апреля 2025</div>
+      <!-- Выбор города и поиск -->
+      <div class="Topline_city_and_search">
+        <div class="Topline_city_selector">
+          <select class="city-select" id="citySelect">
+            <option value="kazan" selected>Казань</option>
+            <option value="spb">Санкт-Петербург</option>
+            <option value="nn">Нижний Новгород</option>
+            <option value="ekb">Екатеринбург</option>
+          </select>
+        </div>
+        <div class="Topline_search__zZ0Eg">
+          <input type="text" placeholder="Поиск новостей..." />
+          <button type="submit">🔍</button>
+        </div>
+      </div>
+      <div class="Topline_bottom_info">
+        <div class="FinanceWidget_wrapper__bG4Lf">
+          <span class="FinanceWidget_text__PE8Vx">Курс:</span>
+          <span class="FinanceWidget_item__ITyJP">USD <b>95.20</b></span>
+          <span class="FinanceWidget_item__ITyJP">EUR <b>102.40</b></span>
+        </div>
+        <div class="QuickInfo_wrapper">
+          <div class="QuickInfo_item">
+            <span class="QuickInfo_label">Погода</span>
+            <span class="QuickInfo_value">−6°C</span>
+          </div>
+          <div class="QuickInfo_item">
+            <span class="QuickInfo_label">Пробки</span>
+            <span class="QuickInfo_value">5/10</span>
+          </div>
+          <div class="QuickInfo_item">
+            <span class="QuickInfo_label">События</span>
+            <span class="QuickInfo_value">12</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Главная новость -->
+  <div class="container main-news-container">
+    <article class="main-news-article">
+      <h2 class="main-news-title">
+        Казань подсветили к новогодним праздникам
+      </h2>
+      <div class="main-news-meta">
+        <a href="#" class="RubricTag_category__2eBld">Город</a>
+        <span class="Rating_rating__tV72K">9.0/10</span>
+      </div>
+    </article>
+  </div>
+
+  <!-- Обертка для всего контента с лентой новостей -->
+  <div class="main-content-wrapper">
+    <!-- Основной контент (слева) -->
+    <div class="main-content">
+      <!-- Топ новостей и сменяющиеся заголовки -->
+      <div class="container top-section">
+        <div class="top-section__wrapper">
+          <!-- Топ 10 новостей (слева) -->
+          <section class="top-news">
+        <h2 class="top-news__title">Топ 10 новостей</h2>
+        <div class="top-news__tabs">
+          <button class="top-news__tab active" data-region="local">В регионе</button>
+          <button class="top-news__tab" data-region="russia">В России</button>
+          <button class="top-news__tab" data-region="world">В мире</button>
+        </div>
+        <ol class="top-news__list active" data-region="local" id="topNewsList">
+          <li class="top-news__item">
+            <a href="#" class="top-news__link">Казань подсветили к новогодним праздникам</a>
+            <span class="top-news__rating">9.0/10</span>
+          </li>
+          <li class="top-news__item">
+            <a href="#" class="top-news__link">Юные спортсмены Татарстана установили новый рекорд</a>
+            <span class="top-news__rating">9.3/10</span>
+          </li>
+          <li class="top-news__item">
+            <a href="#" class="top-news__link">ИИ помогает жителям Казани планировать выходные</a>
+            <span class="top-news__rating">8.7/10</span>
+          </li>
+          <li class="top-news__item">
+            <a href="#" class="top-news__link">В центре Казани обновили общественные пространства</a>
+            <span class="top-news__rating">8.5/10</span>
+          </li>
+          <li class="top-news__item">
+            <a href="#" class="top-news__link">Ночная прогулка по подсвеченной Казани: гид по новому световому маршруту</a>
+            <span class="top-news__rating">8.8/10</span>
+          </li>
+          <li class="top-news__item">
+            <a href="#" class="top-news__link">Большой фестиваль света возвращается на улицы исторического центра</a>
+            <span class="top-news__rating">8.9/10</span>
+          </li>
+          <li class="top-news__item">
+            <a href="#" class="top-news__link">Татарстан привлекает новые стартапы в медиа и финтех</a>
+            <span class="top-news__rating">8.4/10</span>
+          </li>
+          <li class="top-news__item">
+            <a href="#" class="top-news__link">Волонтёры открыли круглосуточный пункт помощи для семей с детьми</a>
+            <span class="top-news__rating">8.6/10</span>
+          </li>
+          <li class="top-news__item">
+            <a href="#" class="top-news__link">Малый бизнес получает гранты на цифровизацию</a>
+            <span class="top-news__rating">8.3/10</span>
+          </li>
+          <li class="top-news__item">
+            <a href="#" class="top-news__link">Городские сервисы переходят на единый цифровой профиль жителей</a>
+            <span class="top-news__rating">8.7/10</span>
+          </li>
+        </ol>
+        <ol class="top-news__list" data-region="russia">
+          <li class="top-news__item">
+            <a href="#" class="top-news__link">Москва объявила о новых программах поддержки бизнеса</a>
+            <span class="top-news__rating">9.1/10</span>
+          </li>
+          <li class="top-news__item">
+            <a href="#" class="top-news__link">Российские учёные разработали новый метод лечения</a>
+            <span class="top-news__rating">8.9/10</span>
+          </li>
+          <li class="top-news__item">
+            <a href="#" class="top-news__link">В Санкт-Петербурге открыли новый культурный центр</a>
+            <span class="top-news__rating">8.8/10</span>
+          </li>
+          <li class="top-news__item">
+            <a href="#" class="top-news__link">Российская экономика показывает рост в четвёртом квартале</a>
+            <span class="top-news__rating">8.6/10</span>
+          </li> 
+          <li class="top-news__item">
+            <a href="#" class="top-news__link">Новосибирск стал центром IT-инноваций</a>
+            <span class="top-news__rating">8.7/10</span>
+          </li>
+          <li class="top-news__item">
+            <a href="#" class="top-news__link">В Екатеринбурге запустили программу умного города</a>
+            <span class="top-news__rating">8.5/10</span>
+          </li>
+          <li class="top-news__item">
+            <a href="#" class="top-news__link">Российские спортсмены завоевали медали на международных соревнованиях</a>
+            <span class="top-news__rating">9.0/10</span>
+          </li>
+          <li class="top-news__item">
+            <a href="#" class="top-news__link">В Краснодаре открыли новый технопарк</a>
+            <span class="top-news__rating">8.4/10</span>
+          </li>
+          <li class="top-news__item">
+            <a href="#" class="top-news__link">Российские стартапы привлекли рекордные инвестиции</a>
+            <span class="top-news__rating">8.8/10</span>
+          </li>
+          <li class="top-news__item">
+            <a href="#" class="top-news__link">В Сочи завершился крупный технологический форум</a>
+            <span class="top-news__rating">8.6/10</span>
+          </li>
+        </ol>
+        <ol class="top-news__list" data-region="world">
+          <li class="top-news__item">
+            <a href="#" class="top-news__link">Климатический саммит: страны договорились о новых целях</a>
+            <span class="top-news__rating">9.2/10</span>
+          </li>
+          <li class="top-news__item">
+            <a href="#" class="top-news__link">Прорыв в области искусственного интеллекта: новая модель GPT</a>
+            <span class="top-news__rating">9.0/10</span>
+          </li>
+          <li class="top-news__item">
+            <a href="#" class="top-news__link">Международная космическая станция получила новый модуль</a>
+            <span class="top-news__rating">8.9/10</span>
+          </li>
+          <li class="top-news__item">
+            <a href="#" class="top-news__link">Европейские страны запустили совместный проект по чистой энергии</a>
+            <span class="top-news__rating">8.7/10</span>
+          </li>
+          <li class="top-news__item">
+            <a href="#" class="top-news__link">Крупнейшие технологические компании объявили о партнёрстве</a>
+            <span class="top-news__rating">8.8/10</span>
+          </li>
+          <li class="top-news__item">
+            <a href="#" class="top-news__link">Всемирный экономический форум обсудил будущее цифровизации</a>
+            <span class="top-news__rating">8.6/10</span>
+          </li>
+          <li class="top-news__item">
+            <a href="#" class="top-news__link">Новые открытия в медицине: прорыв в лечении рака</a>
+            <span class="top-news__rating">9.1/10</span>
+          </li>
+          <li class="top-news__item">
+            <a href="#" class="top-news__link">ООН приняла резолюцию по защите океанов</a>
+            <span class="top-news__rating">8.5/10</span>
+          </li>
+          <li class="top-news__item">
+            <a href="#" class="top-news__link">Международный фестиваль искусств собрал рекордное количество участников</a>
+            <span class="top-news__rating">8.7/10</span>
+          </li>
+          <li class="top-news__item">
+            <a href="#" class="top-news__link">Глобальная инициатива по борьбе с изменением климата набирает обороты</a>
+            <span class="top-news__rating">8.9/10</span>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Правая колонка: видео и реклама -->
+      <div class="top-section__right-column">
+        <!-- Сменяющиеся видео (справа) -->
+        <section class="rotating-headlines">
+          <h2 class="rotating-headlines__title">На экранах сегодня</h2>
+          <div class="rotating-headlines__container">
+            <button class="rotating-headlines__arrow rotating-headlines__arrow--prev" id="videoPrev" aria-label="Предыдущее видео">‹</button>
+            <video class="rotating-headlines__video active" data-index="0" muted loop playsinline>
+              <source src="1.mp4" type="video/mp4">
+              Ваш браузер не поддерживает видео.
+            </video>
+            <video class="rotating-headlines__video" data-index="1" muted loop playsinline>
+              <source src="2.mp4" type="video/mp4">
+              Ваш браузер не поддерживает видео.
+            </video>
+            <video class="rotating-headlines__video" data-index="2" muted loop playsinline>
+              <source src="4.mp4" type="video/mp4">
+              Ваш браузер не поддерживает видео.
+            </video>
+            <button class="rotating-headlines__arrow rotating-headlines__arrow--next" id="videoNext" aria-label="Следующее видео">›</button>
+          </div>
+        </section>
+
+        <!-- Рекламный блок 1 -->
+        <section class="advertisement-block advertisement-block--compact">
+          <a href="#" class="advertisement-link" target="_blank" rel="noopener noreferrer">
+            <img src="reklama.avif" alt="Реклама" class="advertisement-image">
+          </a>
+        </section>
+      </div>
+    </div>
+  </div>
+
+      <!-- Основной контент -->
+      <div class="container Layout_layout__sE9jW">
+        <main class="layout-main">
+      <!-- Популярное -->
+      <section class="fade-in popular-section">
+        <div class="MattersBlock_top__m4Lrv" id="popular">
+          <h2 class="MattersBlock_title__WPCPT">Популярное сегодня</h2>
+        </div>
+        
+        <div class="MattersBlock_middleWrapper__vE8B2 slider-container">
+          <button class="slider-arrow slider-arrow--prev" data-section="popular" aria-label="Предыдущие новости">‹</button>
+          <div class="slider-content">
+            <article class="MatterBig_wrapper__BhMuQ">
+              <img src="{31FF7247-4EAD-4ED6-A714-92384F7FA2FD}.png" alt="Технологии" class="MatterBig_image__JzOt8">
+              <h3 class="MatterBig_title__lSQFy">ИИ помогает жителям Казани планировать выходные</h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Технологии</a>
+                <span class="Rating_rating__tV72K">8.7/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ">
+              <img src="image.png" alt="Спорт" class="MatterBig_image__JzOt8">
+              <h3 class="MatterBig_title__lSQFy">Юные спортсмены Татарстана установили новый рекорд</h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Спорт</a>
+                <span class="Rating_rating__tV72K">9.3/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ">
+              <img src="{31FF7247-4EAD-4ED6-A714-92384F7FA2FD}.png" alt="Город" class="MatterBig_image__JzOt8">
+              <h3 class="MatterBig_title__lSQFy">В центре Казани обновили общественные пространства</h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Общество</a>
+                <span class="Rating_rating__tV72K">8.5/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ">
+              <img src="image.png" alt="Спорт" class="MatterBig_image__JzOt8">
+              <h3 class="MatterBig_title__lSQFy">Зимние виды спорта набирают популярность среди казанцев</h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Спорт</a>
+                <span class="Rating_rating__tV72K">8.4/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ no-image">
+              <h3 class="MatterBig_title__lSQFy">
+                Новые маршруты общественного транспорта свяжут отдалённые районы с центром
+              </h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Транспорт</a>
+                <span class="Rating_rating__tV72K">8.1/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ">
+              <img src="{31FF7247-4EAD-4ED6-A714-92384F7FA2FD}.png" alt="Культура" class="MatterBig_image__JzOt8">
+              <h3 class="MatterBig_title__lSQFy">Фестиваль света возвращается на улицы Казани</h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Культура</a>
+                <span class="Rating_rating__tV72K">8.9/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ no-image">
+              <h3 class="MatterBig_title__lSQFy">
+                Волонтёры помогают семьям с детьми в новогодние праздники
+              </h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Добрые дела</a>
+                <span class="Rating_rating__tV72K">8.6/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ">
+              <img src="image.png" alt="Экономика" class="MatterBig_image__JzOt8">
+              <h3 class="MatterBig_title__lSQFy">Малый бизнес получает гранты на цифровизацию</h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Экономика</a>
+                <span class="Rating_rating__tV72K">8.3/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ no-image">
+              <h3 class="MatterBig_title__lSQFy">
+                Городские сервисы переходят на единый цифровой профиль
+              </h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Цифра</a>
+                <span class="Rating_rating__tV72K">8.7/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ">
+              <img src="{31FF7247-4EAD-4ED6-A714-92384F7FA2FD}.png" alt="Спорт" class="MatterBig_image__JzOt8">
+              <h3 class="MatterBig_title__lSQFy">Новые спортивные площадки открыты в парках Казани</h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Спорт</a>
+                <span class="Rating_rating__tV72K">8.8/10</span>
+              </div>
+            </article>
+          </div>
+          <button class="slider-arrow slider-arrow--next" data-section="popular" aria-label="Следующие новости">›</button>
+        </div>
+      </section>
+
+      <!-- Эксклюзивы: картинка + текст -->
+      <section class="fade-in">
+        <div class="MattersBlock_top__m4Lrv" id="exclusive">
+          <h2 class="MattersBlock_title__WPCPT">Эксклюзивы</h2>
+        </div>
+        <div class="MattersBlock_middleWrapper__vE8B2 slider-container">
+          <button class="slider-arrow slider-arrow--prev" data-section="exclusive" aria-label="Предыдущие эксклюзивы">‹</button>
+          <div class="slider-content">
+            <article class="MatterBig_wrapper__BhMuQ">
+              <img src="image.png" alt="Ночная Казань" class="MatterBig_image__JzOt8">
+              <h3 class="MatterBig_title__lSQFy">Ночная прогулка по подсвеченной Казани: гид по новому световому маршруту</h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Эксклюзив</a>
+                <span class="Rating_rating__tV72K">8.8/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ no-image">
+              <h3 class="MatterBig_title__lSQFy">
+                Как меняется городской транспорт Казани: удобные маршруты, новые трамваи и единый билет
+              </h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Город</a>
+                <span class="Rating_rating__tV72K">8.2/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ">
+              <img src="{31FF7247-4EAD-4ED6-A714-92384F7FA2FD}.png" alt="Культура" class="MatterBig_image__JzOt8">
+              <h3 class="MatterBig_title__lSQFy">Большой фестиваль света возвращается на улицы исторического центра</h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Культура</a>
+                <span class="Rating_rating__tV72K">8.9/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ no-image">
+              <h3 class="MatterBig_title__lSQFy">
+                Эксклюзивное интервью с главным архитектором о будущем городской среды
+              </h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Интервью</a>
+                <span class="Rating_rating__tV72K">8.6/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ">
+              <img src="image.png" alt="События" class="MatterBig_image__JzOt8">
+              <h3 class="MatterBig_title__lSQFy">Календарь событий на январь: что посетить в Казани</h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Афиша</a>
+                <span class="Rating_rating__tV72K">8.7/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ no-image">
+              <h3 class="MatterBig_title__lSQFy">
+                За кулисами: подготовка к зимнему карнавалу в Казани
+              </h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Эксклюзив</a>
+                <span class="Rating_rating__tV72K">9.0/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ">
+              <img src="{31FF7247-4EAD-4ED6-A714-92384F7FA2FD}.png" alt="Спорт" class="MatterBig_image__JzOt8">
+              <h3 class="MatterBig_title__lSQFy">Эксклюзив: встреча с олимпийскими чемпионами Татарстана</h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Спорт</a>
+                <span class="Rating_rating__tV72K">9.1/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ no-image">
+              <h3 class="MatterBig_title__lSQFy">
+                Тайные места Казани: гид по скрытым достопримечательностям
+              </h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Эксклюзив</a>
+                <span class="Rating_rating__tV72K">8.8/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ">
+              <img src="image.png" alt="Технологии" class="MatterBig_image__JzOt8">
+              <h3 class="MatterBig_title__lSQFy">Эксклюзивное тестирование умных городских решений</h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Технологии</a>
+                <span class="Rating_rating__tV72K">8.9/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ no-image">
+              <h3 class="MatterBig_title__lSQFy">
+                Встреча с мэром: планы развития Казани на ближайшие годы
+              </h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Политика</a>
+                <span class="Rating_rating__tV72K">8.5/10</span>
+              </div>
+            </article>
+          </div>
+          <button class="slider-arrow slider-arrow--next" data-section="exclusive" aria-label="Следующие эксклюзивы">›</button>
+        </div>
+      </section>
+
+      <!-- Общество: только текстовые блоки -->
+      <section class="fade-in">
+        <div class="MattersBlock_top__m4Lrv" id="society">
+          <h2 class="MattersBlock_title__WPCPT">Общество</h2>
+        </div>
+        <div class="Matters_matters__aDHYk slider-container">
+          <button class="slider-arrow slider-arrow--prev" data-section="society" aria-label="Предыдущие новости общества">‹</button>
+          <div class="slider-content">
+            <article class="MatterBig_wrapper__BhMuQ no-image">
+              <h3 class="MatterBig_title__lSQFy">
+                Жители Казани делятся историями о том, как меняется городский район после благоустройства дворов
+              </h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Общество</a>
+                <span class="Rating_rating__tV72K">7.9/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ no-image">
+              <h3 class="MatterBig_title__lSQFy">
+                Волонтёры открыли круглосуточный пункт помощи для семей с детьми в предновогодние дни
+              </h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Добрые дела</a>
+                <span class="Rating_rating__tV72K">8.6/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ no-image">
+              <h3 class="MatterBig_title__lSQFy">
+                Молодёжь запускает серию хакатонов по экологическим проектам: что ждёт участников
+              </h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Сообщество</a>
+                <span class="Rating_rating__tV72K">8.1/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ no-image">
+              <h3 class="MatterBig_title__lSQFy">
+                Истории соседей: как жители одного двора организовали зимний кинолекторий
+              </h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Общество</a>
+                <span class="Rating_rating__tV72K">7.8/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ">
+              <img src="{31FF7247-4EAD-4ED6-A714-92384F7FA2FD}.png" alt="Общество" class="MatterBig_image__JzOt8">
+              <h3 class="MatterBig_title__lSQFy">Городские инициативы: как жители влияют на развитие районов</h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Инициативы</a>
+                <span class="Rating_rating__tV72K">8.3/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ no-image">
+              <h3 class="MatterBig_title__lSQFy">
+                Социальные проекты получают поддержку от городских властей и бизнеса
+              </h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Проекты</a>
+                <span class="Rating_rating__tV72K">8.0/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ no-image">
+              <h3 class="MatterBig_title__lSQFy">
+                Образовательные программы для пенсионеров набирают популярность
+              </h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Образование</a>
+                <span class="Rating_rating__tV72K">8.2/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ">
+              <img src="image.png" alt="Здоровье" class="MatterBig_image__JzOt8">
+              <h3 class="MatterBig_title__lSQFy">Бесплатные медицинские осмотры для жителей отдалённых районов</h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Здоровье</a>
+                <span class="Rating_rating__tV72K">8.4/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ no-image">
+              <h3 class="MatterBig_title__lSQFy">
+                Культурные мероприятия для детей с ограниченными возможностями
+              </h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Инклюзия</a>
+                <span class="Rating_rating__tV72K">8.7/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ no-image">
+              <h3 class="MatterBig_title__lSQFy">
+                Городской совет по делам молодёжи обсуждает новые инициативы
+              </h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Молодёжь</a>
+                <span class="Rating_rating__tV72K">7.9/10</span>
+              </div>
+            </article>
+          </div>
+          <button class="slider-arrow slider-arrow--next" data-section="society" aria-label="Следующие новости общества">›</button>
+        </div>
+      </section>
+
+      <!-- Рекламный блок 2 -->
+      <section class="advertisement-block advertisement-block--compact">
+        <a href="#" class="advertisement-link" target="_blank" rel="noopener noreferrer">
+          <img src="reklama 2.avif" alt="Реклама" class="advertisement-image">
+        </a>
+      </section>
+
+      <!-- Экономика и технологии -->
+      <section class="fade-in">
+        <div class="MattersBlock_top__m4Lrv" id="economy">
+          <h2 class="MattersBlock_title__WPCPT">Экономика и технологии</h2>
+        </div>
+        <div class="MattersBlock_middleWrapper__vE8B2 slider-container">
+          <button class="slider-arrow slider-arrow--prev" data-section="economy" aria-label="Предыдущие новости экономики">‹</button>
+          <div class="slider-content">
+            <article class="MatterBig_wrapper__BhMuQ">
+              <img src="image.png" alt="ИТ кластер" class="MatterBig_image__JzOt8">
+              <h3 class="MatterBig_title__lSQFy">Татарстан привлекает новые стартапы в медиа и финтех: первые резиденты</h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Экономика</a>
+                <span class="Rating_rating__tV72K">8.4/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ no-image">
+              <h3 class="MatterBig_title__lSQFy">
+                Инженеры КНИТУ тестируют беспилотный транспорт для кампуса: первые результаты
+              </h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Технологии</a>
+                <span class="Rating_rating__tV72K">8.0/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ">
+              <img src="{31FF7247-4EAD-4ED6-A714-92384F7FA2FD}.png" alt="Бизнес" class="MatterBig_image__JzOt8">
+              <h3 class="MatterBig_title__lSQFy">Малый бизнес получает гранты на цифровизацию: как подать заявку</h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Бизнес</a>
+                <span class="Rating_rating__tV72K">8.3/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ no-image">
+              <h3 class="MatterBig_title__lSQFy">
+                Инновационные стартапы привлекают инвестиции: обзор рынка технологий
+              </h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Стартапы</a>
+                <span class="Rating_rating__tV72K">8.5/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ">
+              <img src="image.png" alt="Технологии" class="MatterBig_image__JzOt8">
+              <h3 class="MatterBig_title__lSQFy">Цифровая трансформация городских сервисов: первые результаты</h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Цифра</a>
+                <span class="Rating_rating__tV72K">8.6/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ no-image">
+              <h3 class="MatterBig_title__lSQFy">
+                Блокчейн-технологии в муниципальном управлении: пилотные проекты
+              </h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Блокчейн</a>
+                <span class="Rating_rating__tV72K">8.2/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ">
+              <img src="{31FF7247-4EAD-4ED6-A714-92384F7FA2FD}.png" alt="ИИ" class="MatterBig_image__JzOt8">
+              <h3 class="MatterBig_title__lSQFy">Искусственный интеллект в образовании: новые возможности для школ</h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">ИИ</a>
+                <span class="Rating_rating__tV72K">8.8/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ no-image">
+              <h3 class="MatterBig_title__lSQFy">
+                Кибербезопасность для малого бизнеса: доступные решения
+              </h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Кибербезопасность</a>
+                <span class="Rating_rating__tV72K">8.1/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ">
+              <img src="image.png" alt="Инновации" class="MatterBig_image__JzOt8">
+              <h3 class="MatterBig_title__lSQFy">Инновационный центр открывает лабораторию для молодых учёных</h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">Инновации</a>
+                <span class="Rating_rating__tV72K">8.7/10</span>
+              </div>
+            </article>
+            <article class="MatterBig_wrapper__BhMuQ no-image">
+              <h3 class="MatterBig_title__lSQFy">
+                Электронная коммерция в Татарстане: рост и перспективы
+              </h3>
+              <div class="MatterBig_meta__DPsSp">
+                <a href="#" class="RubricTag_category__2eBld">E-commerce</a>
+                <span class="Rating_rating__tV72K">8.4/10</span>
+              </div>
+            </article>
+          </div>
+          <button class="slider-arrow slider-arrow--next" data-section="economy" aria-label="Следующие новости экономики">›</button>
+        </div>
+      </section>
+        </main>
+      </div>
+    </div>
+
+    <!-- Правая колонка: лента новостей -->
+    <aside class="news-sidebar slide-in-right">
+      <div class="news-sidebar__header">
+        <div>
+          <span class="news-sidebar__label">Лента</span>
+          <h2 class="news-sidebar__title">Новости сейчас</h2>
+        </div>
+        <button class="news-sidebar__toggle" id="toggleNews">Скрыть</button>
+      </div>
+      <div class="news-sidebar__tabs">
+        <button class="news-sidebar__tab active" data-news-type="all" id="newsTabAll">Все новости</button>
+        <button class="news-sidebar__tab" data-news-type="region" id="newsTabRegion">Регион</button>
+      </div>
+      <div class="news-feed" id="newsFeed">
+        <article class="news-item">
+          <time class="news-item__time">09:47</time>
+          <h3 class="news-item__title">Музыканты из Грузии и Ирана выбрали Казань для зимнего тура</h3>
+        </article>
+        <article class="news-item">
+          <time class="news-item__time">09:39</time>
+          <h3 class="news-item__title">В центре города открыли уличную фотовыставку о жизни казанцев</h3>
+        </article>
+        <article class="news-item">
+          <time class="news-item__time">09:25</time>
+          <h3 class="news-item__title">Новый айти‑кластер в Татарстане создаст сотни рабочих мест</h3>
+        </article>
+        <article class="news-item">
+          <time class="news-item__time">09:12</time>
+          <h3 class="news-item__title">На набережной Кабы завершают монтаж праздничной иллюминации</h3>
+        </article>
+        <article class="news-item">
+          <time class="news-item__time">08:58</time>
+          <h3 class="news-item__title">Казанский университет запускает серию открытых лекций по дизайну медиа</h3>
+        </article>
+        <article class="news-item">
+          <time class="news-item__time">08:41</time>
+          <h3 class="news-item__title">В аэропорту усилили работу волонтёров из‑за роста пассажиропотока</h3>
+        </article>
+        <article class="news-item">
+          <time class="news-item__time">08:29</time>
+          <h3 class="news-item__title">Город добавил ночные автобусы к ключевым магистралям</h3>
+        </article>
+        <article class="news-item">
+          <time class="news-item__time">08:10</time>
+          <h3 class="news-item__title">Музеи Казани готовят бесплатный вход для студентов в январе</h3>
+        </article>
+        <article class="news-item">
+          <time class="news-item__time">07:55</time>
+          <h3 class="news-item__title">Спортивные школы открывают зимние наборы на фигурное катание</h3>
+        </article>
+        <article class="news-item">
+          <time class="news-item__time">07:37</time>
+          <h3 class="news-item__title">Креативные индустрии: стартует конкурс микрогрантов для дизайнеров</h3>
+        </article>
+        <button class="MattersBlock_more__GsimI news-feed__more" id="moreNews">Ещё новости</button>
+      </div>
+
+      <div class="sidebar-widgets">
+        <section class="widget">
+          <h3 class="widget__title">Топ‑темы</h3>
+          <div class="chips">
+            <span class="chip">Казань</span>
+            <span class="chip">Дизайн</span>
+            <span class="chip">Технологии</span>
+            <span class="chip">Спорт</span>
+            <span class="chip">Культура</span>
+          </div>
+        </section>
+        <section class="widget">
+          <h3 class="widget__title">Коротко</h3>
+          <div class="mini-list">
+            <div class="mini-row"><span>Погода</span><b>−6°C</b></div>
+            <div class="mini-row"><span>Пробки</span><b>5/10</b></div>
+            <div class="mini-row"><span>События</span><b>12</b></div>
+          </div>
+        </section>
+      </div>
+    </aside>
+    <button class="news-reveal" id="revealNews" aria-label="Показать ленту">Лента</button>
+  </div>
+
+  <!-- Модальное окно для новостей -->
+  <div class="news-modal" id="newsModal">
+    <div class="news-modal__overlay"></div>
+    <div class="news-modal__content">
+      <button class="news-modal__close" id="closeModal">×</button>
+      <div class="news-modal__image-container" id="modalImageContainer"></div>
+      <div class="news-modal__body">
+        <div class="news-modal__meta" id="modalMeta"></div>
+        <h2 class="news-modal__title" id="modalTitle"></h2>
+        <div class="news-modal__text" id="modalText"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Кнопка "Наверх" -->
+  <button class="scroll-to-top" id="scrollToTop">↑</button>
+
+  <!-- Подвал -->
+  <footer class="Footer_wrapper__piby_ container">
+    <div class="Footer_contactsIntegration__BuoTv">
+      <table>
+        <tr><th>Телефон</th><td>+7 (843) 123-45-67</td></tr>
+        <tr><th>Email</th><td>info@molniya-info.ru</td></tr>
+      </table>
+      <div class="Footer_cities">
+        <span class="Footer_city">Санкт-Петербург</span>
+        <span class="Footer_city">Казань</span>
+        <span class="Footer_city">Нижний Новгород</span>
+        <span class="Footer_city">Екатеринбург</span>
+      </div>
+    </div>
+    <div class="social">
+      <a href="#"><svg><use xlink:href="#vk"></use></svg></a>
+      <a href="#"><svg><use xlink:href="#tg"></use></svg></a>
+    </div>
+  </footer>
+
+  <!-- Скрипты -->
+  <script>
+    const body = document.body;
+    
+    // Функция установки размеров логотипа
+    function setLogoSize(logo, isLight) {
+      if (logo) {
+        // Базовые размеры одинаковые для обеих тем, масштабирование через CSS transform
+        logo.style.height = '50px';
+        logo.style.width = '200px';
+        logo.style.minHeight = '50px';
+        logo.style.minWidth = '200px';
+        logo.style.maxHeight = '50px';
+        logo.style.maxWidth = '200px';
+        logo.style.objectFit = 'contain';
+        logo.style.objectPosition = 'left center';
+        logo.style.flexShrink = '0';
+        logo.style.display = 'block';
+        logo.style.boxSizing = 'border-box';
+        // Масштабирование для тёмной темы через transform
+        if (!isLight) {
+          logo.style.transform = 'scale(3)';
+          logo.style.transformOrigin = 'left center';
+        } else {
+          logo.style.transform = 'scale(1)';
+          logo.style.transformOrigin = 'left center';
+        }
+      }
+    }
+
+    // Функция обновления логотипа в зависимости от темы
+    function updateLogo() {
+      const logo = document.getElementById('siteLogo');
+      const logoContainer = document.querySelector('.Topline_logo__jPjtC');
+      const isLight = body.getAttribute('data-theme') === 'light';
+      if (logo) {
+        // Устанавливаем размеры перед сменой изображения
+        setLogoSize(logo, isLight);
+        logo.src = isLight ? 'logo.png' : 'alt_logo.png';
+        // Устанавливаем размеры сразу после смены src
+        setLogoSize(logo, isLight);
+        // Обновляем размеры контейнера (всегда одинаковые, логотип масштабируется через CSS transform)
+        if (logoContainer) {
+          logoContainer.style.height = '50px';
+          logoContainer.style.width = '200px';
+          logoContainer.style.minWidth = '200px';
+          logoContainer.style.maxWidth = '200px';
+          logoContainer.style.overflow = 'visible';
+        }
+        // И после загрузки изображения (на случай, если оно кэшировано)
+        if (logo.complete) {
+          setLogoSize(logo, isLight);
+        } else {
+          logo.onload = function() {
+            setLogoSize(logo, isLight);
+            logo.onload = null; // Убираем обработчик после использования
+          };
+        }
+      }
+    }
+
+    // Загружаем сохранённую тему при загрузке страницы
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    body.setAttribute('data-theme', savedTheme);
+    updateLogo();
+
+    // Переключение темы (можно расширить)
+    const themeToggle = document.querySelector('.theme-toggle');
+    themeToggle.addEventListener('click', () => {
+      const isLight = body.getAttribute('data-theme') === 'light';
+      const newTheme = isLight ? 'dark' : 'light';
+      body.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateLogo();
+    });
+
+    // Обновить логотип при загрузке страницы
+    updateLogo();
+
+    // Переключатель регионов в разделе "Топ 10 новостей"
+    const newsTabs = document.querySelectorAll('.top-news__tab');
+    const newsLists = document.querySelectorAll('.top-news__list[data-region]');
+    
+    newsTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const region = tab.getAttribute('data-region');
+        
+        // Убираем активный класс со всех вкладок
+        newsTabs.forEach(t => t.classList.remove('active'));
+        // Добавляем активный класс к выбранной вкладке
+        tab.classList.add('active');
+        
+        // Скрываем все списки
+        newsLists.forEach(list => {
+          list.classList.remove('active');
+        });
+        
+        // Показываем выбранный список
+        const selectedList = document.querySelector(`.top-news__list[data-region="${region}"]`);
+        if (selectedList) {
+          selectedList.classList.add('active');
+        }
+      });
+    });
+
+    // Кнопка "Наверх"
+    const scrollTopBtn = document.getElementById('scrollToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        scrollTopBtn.classList.add('visible');
+      } else {
+        scrollTopBtn.classList.remove('visible');
+      }
+    });
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Лента новостей: скрыть/показать и переключение мок-новостей
+    const newsSidebar = document.querySelector('.news-sidebar');
+    const toggleNewsBtn = document.getElementById('toggleNews');
+    const moreNewsBtn = document.getElementById('moreNews');
+    const revealNewsBtn = document.getElementById('revealNews');
+    const newsFeed = document.getElementById('newsFeed');
+    const newsTabAll = document.getElementById('newsTabAll');
+    const newsTabRegion = document.getElementById('newsTabRegion');
+
+    const newsBatchesAll = [
+      [
+        { time: '09:47', title: 'Музыканты из Грузии и Ирана выбрали Казань для зимнего тура' },
+        { time: '09:39', title: 'В центре города открыли уличную фотовыставку о жизни казанцев' },
+        { time: '09:25', title: 'Новый айти‑кластер в Татарстане создаст сотни рабочих мест' },
+        { time: '09:12', title: 'На набережной Кабы завершают монтаж праздничной иллюминации' },
+        { time: '08:58', title: 'Казанский университет запускает серию открытых лекций по дизайну медиа' },
+        { time: '08:41', title: 'В аэропорту усилили работу волонтёров из‑за роста пассажиропотока' },
+        { time: '08:29', title: 'Город добавил ночные автобусы к ключевым магистралям' },
+        { time: '08:10', title: 'Музеи Казани готовят бесплатный вход для студентов в январе' },
+        { time: '07:55', title: 'Спортивные школы открывают зимние наборы на фигурное катание' },
+        { time: '07:37', title: 'Креативные индустрии: стартует конкурс микрогрантов для дизайнеров' },
+      ],
+      [
+        { time: '10:05', title: 'IT-парк объявил набор на акселератор медиапроектов' },
+        { time: '09:58', title: 'В Казани протестировали умные остановки с подогревом' },
+        { time: '09:42', title: 'Волонтёры запускают горячую линию помощи пожилым на выходных' },
+        { time: '09:21', title: 'Запустили рейс Казань — Баку дополнительно на праздничные дни' },
+        { time: '09:07', title: 'Открылась интерактивная экспозиция о казанских архитекторах' },
+        { time: '08:54', title: 'Лыжные трассы в окрестностях города готовят к ночным заездам' },
+        { time: '08:36', title: 'Стартовал городской конкурс проектов по раздельному сбору' },
+        { time: '08:18', title: 'Молодёжные центры проведут серию мастер-классов по анимации' },
+        { time: '08:02', title: 'Метрополитен продлил работу на один час в выходные' },
+        { time: '07:50', title: 'Запустили пилот по eSIM в муниципальных сервисах' },
+      ],
+      [
+        { time: '10:20', title: 'Казанские студенты выиграли олимпиаду по робототехнике' },
+        { time: '10:09', title: 'Туроператоры отмечают рост спроса на зимние маршруты по Волге' },
+        { time: '09:55', title: 'На площади Тысячелетия готовят большой ледовый городок' },
+        { time: '09:34', title: 'Форум креативных индустрий собрал участников из 12 стран' },
+        { time: '09:18', title: 'Город выделил гранты на освещение локальных культурных событий' },
+        { time: '09:03', title: 'В школах тестируют модуль по цифровой гигиене' },
+        { time: '08:47', title: 'Запустили велопрокат с зимней резиной в центре' },
+        { time: '08:26', title: 'Открылась новая галерея современного искусства на Баумана' },
+        { time: '08:11', title: 'Набережная Казанки получила новый световой дизайн' },
+        { time: '07:59', title: 'Сервисы каршеринга расширили зону на север города' },
+      ],
+    ];
+
+    const newsBatchesRegion = [
+      [
+        { time: '09:47', title: 'Казань: Музыканты из Грузии и Ирана выбрали город для зимнего тура' },
+        { time: '09:39', title: 'В центре Казани открыли уличную фотовыставку о жизни казанцев' },
+        { time: '09:25', title: 'Новый айти‑кластер в Татарстане создаст сотни рабочих мест' },
+        { time: '09:12', title: 'На набережной Кабы завершают монтаж праздничной иллюминации' },
+        { time: '08:58', title: 'Казанский университет запускает серию открытых лекций по дизайну медиа' },
+        { time: '08:41', title: 'В аэропорту Казани усилили работу волонтёров из‑за роста пассажиропотока' },
+        { time: '08:29', title: 'Казань добавила ночные автобусы к ключевым магистралям' },
+        { time: '08:10', title: 'Музеи Казани готовят бесплатный вход для студентов в январе' },
+        { time: '07:55', title: 'Спортивные школы Казани открывают зимние наборы на фигурное катание' },
+        { time: '07:37', title: 'Креативные индустрии Казани: стартует конкурс микрогрантов для дизайнеров' },
+      ],
+    ];
+
+    let currentBatch = 0;
+    let currentNewsType = 'all';
+
+    // Функция для добавления обработчиков кликов на новости из ленты
+    function attachNewsFeedHandlers() {
+      const newsItems = document.querySelectorAll('.news-item');
+      newsItems.forEach(item => {
+        // Удаляем старый обработчик, если есть
+        item.removeEventListener('click', handleNewsItemClick);
+        // Добавляем новый обработчик
+        item.addEventListener('click', handleNewsItemClick);
+      });
+    }
+
+    // Обработчик клика на новость из ленты
+    function handleNewsItemClick(e) {
+      e.preventDefault();
+      const newsItem = e.currentTarget;
+      const titleElement = newsItem.querySelector('.news-item__title');
+      const timeElement = newsItem.querySelector('.news-item__time');
+      const title = titleElement?.textContent.trim() || '';
+      const time = timeElement?.textContent.trim() || '';
+      
+      // У новостей из ленты нет картинки
+      modalImageContainer.innerHTML = '';
+      
+      modalTitle.textContent = title;
+      
+      // Создаём мета-данные со временем
+      modalMeta.innerHTML = time ? `<time>${time}</time>` : '';
+
+      // Получаем текст новости из объекта fullTexts
+      modalText.textContent = fullTexts[title] || 'Подробная информация о событии будет доступна в ближайшее время. Следите за обновлениями на нашем сайте.';
+
+      newsModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function renderNews(batchIndex, newsType = 'all') {
+      const batches = newsType === 'all' ? newsBatchesAll : newsBatchesRegion;
+      const batch = batches[batchIndex];
+      if (!batch || !newsFeed) return;
+      const moreBtn = newsFeed.querySelector('.news-feed__more');
+      newsFeed.innerHTML = batch
+        .map(
+          (item) => `
+            <article class="news-item">
+              <time class="news-item__time">${item.time}</time>
+              <h3 class="news-item__title">${item.title}</h3>
+            </article>
+          `
+        )
+        .join('');
+      if (moreBtn) {
+        newsFeed.appendChild(moreBtn);
+      }
+      // Добавляем обработчики кликов для новых новостей
+      attachNewsFeedHandlers();
+    }
+
+    toggleNewsBtn?.addEventListener('click', () => {
+      const hidden = newsSidebar.classList.toggle('news-sidebar--hidden');
+      toggleNewsBtn.textContent = hidden ? 'Показать' : 'Скрыть';
+      const mainContentWrapper = document.querySelector('.main-content-wrapper');
+      if (hidden) {
+        revealNewsBtn?.classList.add('visible');
+        mainContentWrapper?.classList.add('news-sidebar-hidden');
+      } else {
+        revealNewsBtn?.classList.remove('visible');
+        mainContentWrapper?.classList.remove('news-sidebar-hidden');
+      }
+    });
+
+    revealNewsBtn?.addEventListener('click', () => {
+      newsSidebar.classList.remove('news-sidebar--hidden');
+      toggleNewsBtn.textContent = 'Скрыть';
+      revealNewsBtn.classList.remove('visible');
+      const mainContentWrapper = document.querySelector('.main-content-wrapper');
+      mainContentWrapper?.classList.remove('news-sidebar-hidden');
+    });
+
+    // Переключение между "Все новости" и "Регион"
+    newsTabAll?.addEventListener('click', () => {
+      newsTabAll.classList.add('active');
+      newsTabRegion?.classList.remove('active');
+      currentNewsType = 'all';
+      currentBatch = 0;
+      renderNews(currentBatch, 'all');
+    });
+
+    newsTabRegion?.addEventListener('click', () => {
+      newsTabRegion.classList.add('active');
+      newsTabAll?.classList.remove('active');
+      currentNewsType = 'region';
+      currentBatch = 0;
+      renderNews(currentBatch, 'region');
+    });
+
+    moreNewsBtn?.addEventListener('click', () => {
+      const batches = currentNewsType === 'all' ? newsBatchesAll : newsBatchesRegion;
+      currentBatch = (currentBatch + 1) % batches.length;
+      renderNews(currentBatch, currentNewsType);
+    });
+
+    // Инициализация: показываем все новости
+    renderNews(0, 'all');
+
+    // Сменяющиеся видео
+    const rotatingVideos = document.querySelectorAll('.rotating-headlines__video');
+    const videoPrevBtn = document.getElementById('videoPrev');
+    const videoNextBtn = document.getElementById('videoNext');
+    let currentVideoIndex = 0;
+
+    function showVideo(index) {
+      if (rotatingVideos.length === 0) return;
+      
+      // Останавливаем все видео
+      rotatingVideos.forEach(video => {
+        video.classList.remove('active');
+        video.pause();
+        video.currentTime = 0;
+      });
+      
+      // Показываем выбранное видео
+      currentVideoIndex = index;
+      const selectedVideo = rotatingVideos[currentVideoIndex];
+      selectedVideo.classList.add('active');
+      selectedVideo.play().catch(e => console.log('Автовоспроизведение заблокировано:', e));
+    }
+
+    function nextVideo() {
+      const nextIndex = (currentVideoIndex + 1) % rotatingVideos.length;
+      showVideo(nextIndex);
+    }
+
+    function prevVideo() {
+      const prevIndex = (currentVideoIndex - 1 + rotatingVideos.length) % rotatingVideos.length;
+      showVideo(prevIndex);
+    }
+
+    // Инициализация: запускаем первое видео
+    if (rotatingVideos.length > 0) {
+      showVideo(0);
+      
+      // Обработчики для стрелок
+      videoNextBtn?.addEventListener('click', nextVideo);
+      videoPrevBtn?.addEventListener('click', prevVideo);
+    }
+
+    // Модальное окно для новостных блоков
+    const newsModal = document.getElementById('newsModal');
+    const closeModalBtn = document.getElementById('closeModal');
+    const modalImageContainer = document.getElementById('modalImageContainer');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalText = document.getElementById('modalText');
+    const modalMeta = document.getElementById('modalMeta');
+
+    const newsArticles = document.querySelectorAll('.MatterBig_wrapper__BhMuQ');
+
+    // Общий объект с текстами новостей
+    const fullTexts = {
+        'Казань подсветили к новогодним праздникам': 'В преддверии новогодних праздников администрация Казани запустила масштабную программу подсветки городских улиц и площадей. Специалисты установили более 50 тысяч светодиодных гирлянд и декоративных элементов, которые создают праздничную атмосферу в историческом центре города. Особое внимание уделено набережной Казанки и площади Тысячелетия, где установлены тематические световые инсталляции. Жители и гости города могут насладиться красивой подсветкой до конца января.',
+        'ИИ помогает жителям Казани планировать выходные': 'Новый сервис на основе искусственного интеллекта помогает казанцам планировать досуг. Система анализирует предпочтения пользователя, погодные условия и доступные мероприятия, предлагая персонализированные рекомендации. Сервис уже используют более 10 тысяч жителей города.',
+        'Юные спортсмены Татарстана установили новый рекорд': 'Спортсмены из Казани показали отличные результаты на всероссийских соревнованиях. Команда завоевала 15 медалей, установив новый рекорд региона.',
+        'В центре Казани обновили общественные пространства': 'Завершено благоустройство нескольких площадей в центре города. Установлены новые скамейки, освещение и озеленение.',
+        'Ночная прогулка по подсвеченной Казани: гид по новому световому маршруту': 'Эксклюзивный маршрут для ночных прогулок включает самые красивые подсвеченные места города. Маршрут проходит через исторический центр и набережную.',
+        'Как меняется городской транспорт Казани: удобные маршруты, новые трамваи и единый билет': 'Городской транспорт Казани переживает масштабную модернизацию. Введены новые маршруты, обновлён парк трамваев, запущена система единого билета для всех видов транспорта. Это значительно упростило передвижение по городу для жителей и гостей столицы Татарстана.',
+        'Большой фестиваль света возвращается на улицы исторического центра': 'Ежегодный фестиваль света в этом году обещает быть ещё более масштабным. Организаторы подготовили уникальные световые инсталляции и интерактивные зоны.',
+        'Жители Казани делятся историями о том, как меняется городской район после благоустройства дворов': 'Программа благоустройства дворов приносит заметные результаты. Жители отмечают улучшение качества жизни и появление новых мест для отдыха.',
+        'Волонтёры открыли круглосуточный пункт помощи для семей с детьми в предновогодние дни': 'Волонтёрская организация открыла специальный пункт помощи для семей с детьми. Здесь можно получить консультации, помощь и поддержку.',
+        'Молодёжь запускает серию хакатонов по экологическим проектам: что ждёт участников': 'Серия экологических хакатонов соберёт молодых разработчиков и экологов для создания инновационных решений городских проблем.',
+        'Истории соседей: как жители одного двора организовали зимний кинолекторий': 'Жители одного из казанских дворов организовали зимний кинолекторий для детей и взрослых. Это стало примером активной гражданской позиции.',
+        'Татарстан привлекает новые стартапы в медиа и финтех: первые резиденты': 'Региональные программы поддержки стартапов привлекают новые технологические компании. Первые резиденты уже начали работу.',
+        'Региональные фонды запускают программы для технологических команд': 'Новые программы финансирования помогут технологическим командам развивать свои проекты и создавать рабочие места.',
+        'Цифровые сервисы для предпринимателей объединяют документооборот и финансы в одном окне': 'Единая платформа для предпринимателей упрощает работу с документами и финансами, экономя время и ресурсы бизнеса.',
+        'Малый бизнес получает гранты на цифровизацию: как подать заявку': 'Программа грантов помогает малому бизнесу внедрять цифровые технологии. Уже более 100 компаний получили поддержку.',
+        'Новые рабочие места: региональные компании расширяют команды': 'Экономический рост в регионе создаёт новые рабочие места. Компании активно нанимают специалистов в различных сферах.',
+        'Эксперты объяснили, как подготовить проект к гранту: чек‑лист для предпринимателей': 'Эксперты поделились советами по подготовке заявок на гранты. Правильная подготовка увеличивает шансы на получение финансирования.',
+        'Инновационные стартапы привлекают инвестиции: обзор рынка технологий': 'Технологические стартапы Казани привлекают внимание инвесторов. Рынок показывает устойчивый рост.',
+        'Цифровая трансформация городских сервисов: первые результаты': 'Цифровизация городских сервисов показывает первые положительные результаты. Улучшилось качество обслуживания жителей.',
+        'Городские инициативы: как жители влияют на развитие районов': 'Гражданские инициативы играют важную роль в развитии городских районов. Жители активно участвуют в благоустройстве.',
+        'Социальные проекты получают поддержку от городских властей и бизнеса': 'Социальные проекты получают комплексную поддержку от властей и бизнеса, что позволяет реализовывать важные инициативы.',
+        'Москва объявила о новых программах поддержки бизнеса': 'Столичные власти запустили масштабную программу поддержки малого и среднего бизнеса. Предприниматели могут получить льготные кредиты, налоговые послабления и консультационную поддержку. Программа рассчитана на три года и охватит более 50 тысяч предприятий.',
+        'Российские учёные разработали новый метод лечения': 'Исследователи из ведущих медицинских институтов России представили инновационный метод лечения, который показал высокую эффективность в клинических испытаниях. Новый подход открывает перспективы для лечения ранее неизлечимых заболеваний.',
+        'В Санкт-Петербурге открыли новый культурный центр': 'В Северной столице состоялось торжественное открытие современного культурного центра, который объединит под одной крышей выставочные залы, концертные площадки и образовательные пространства. Центр станет новой точкой притяжения для жителей и гостей города.',
+        'Российская экономика показывает рост в четвёртом квартале': 'По данным статистики, российская экономика демонстрирует устойчивый рост в четвёртом квартале. Основными драйверами роста стали обрабатывающая промышленность, сельское хозяйство и сфера услуг.',
+        'Новосибирск стал центром IT-инноваций': 'Новосибирск укрепляет свои позиции как один из ведущих IT-центров России. В городе открылись новые технологические кластеры, привлечены крупные инвестиции в сферу информационных технологий.',
+        'В Екатеринбурге запустили программу умного города': 'Администрация Екатеринбурга представила комплексную программу развития умного города. В рамках программы будут внедрены интеллектуальные системы управления транспортом, энергоснабжением и городской инфраструктурой.',
+        'Российские спортсмены завоевали медали на международных соревнованиях': 'Российские спортсмены показали отличные результаты на международных соревнованиях, завоевав множество медалей в различных дисциплинах. Успехи спортсменов демонстрируют высокий уровень подготовки и талант российских атлетов.',
+        'В Краснодаре открыли новый технопарк': 'В Краснодаре состоялось открытие современного технопарка, который станет площадкой для развития инновационных проектов. Технопарк предоставит резидентам современную инфраструктуру и поддержку на всех этапах развития бизнеса.',
+        'Российские стартапы привлекли рекордные инвестиции': 'Российские технологические стартапы установили новый рекорд по привлечению инвестиций. Инвесторы высоко оценивают потенциал российских технологических компаний и их инновационные решения.',
+        'В Сочи завершился крупный технологический форум': 'В Сочи успешно завершился крупнейший технологический форум года, собравший ведущих экспертов, инвесторов и предпринимателей. На форуме были представлены перспективные проекты и заключены важные соглашения о сотрудничестве.',
+        'Климатический саммит: страны договорились о новых целях': 'Участники международного климатического саммита достигли соглашения о новых амбициозных целях по сокращению выбросов парниковых газов. Договорённости включают конкретные меры и сроки их реализации.',
+        'Прорыв в области искусственного интеллекта: новая модель GPT': 'Исследователи представили новую версию языковой модели GPT, которая демонстрирует значительные улучшения в понимании контекста и генерации текста. Модель открывает новые возможности для применения ИИ в различных сферах.',
+        'Международная космическая станция получила новый модуль': 'К МКС успешно пристыкован новый научный модуль, который расширит возможности для проведения экспериментов в условиях невесомости. Модуль оснащён современным оборудованием для исследований в различных областях науки.',
+        'Европейские страны запустили совместный проект по чистой энергии': 'Европейские страны объединили усилия для реализации масштабного проекта по развитию возобновляемых источников энергии. Проект направлен на достижение климатических целей и обеспечение энергетической безопасности.',
+        'Крупнейшие технологические компании объявили о партнёрстве': 'Ведущие технологические корпорации объявили о стратегическом партнёрстве, направленном на развитие инновационных решений. Совместные проекты охватят области искусственного интеллекта, облачных технологий и кибербезопасности.',
+        'Всемирный экономический форум обсудил будущее цифровизации': 'На Всемирном экономическом форуме эксперты обсудили ключевые тренды цифровизации и их влияние на глобальную экономику. Особое внимание было уделено вопросам цифровой трансформации и инклюзивности.',
+        'Новые открытия в медицине: прорыв в лечении рака': 'Медицинские исследователи сообщили о важном прорыве в лечении онкологических заболеваний. Новый метод лечения показал высокую эффективность в клинических испытаниях и даёт надежду тысячам пациентов.',
+        'ООН приняла резолюцию по защите океанов': 'Генеральная Ассамблея ООН приняла важную резолюцию, направленную на защиту мирового океана. Документ предусматривает комплексные меры по сохранению морских экосистем и борьбе с загрязнением океанов.',
+        'Международный фестиваль искусств собрал рекордное количество участников': 'Международный фестиваль искусств побил все рекорды по количеству участников и зрителей. Фестиваль стал крупнейшим культурным событием года, объединив художников, музыкантов и деятелей искусства со всего мира.',
+        'Глобальная инициатива по борьбе с изменением климата набирает обороты': 'Международная инициатива по борьбе с изменением климата получает всё больше поддержки от стран и корпораций. Участники инициативы берут на себя обязательства по сокращению углеродного следа и переходу на зелёные технологии.',
+        'Музыканты из Грузии и Ирана выбрали Казань для зимнего тура': 'Международные музыканты из Грузии и Ирана выбрали Казань в качестве одного из ключевых городов для своего зимнего концертного тура. Выступления пройдут в крупнейших концертных залах города и соберут поклонников этнической и современной музыки со всего региона.',
+        'В центре города открыли уличную фотовыставку о жизни казанцев': 'В историческом центре Казани открылась масштабная уличная фотовыставка, рассказывающая о повседневной жизни горожан. Экспозиция включает более 50 фотографий, сделанных местными фотографами, и будет доступна для просмотра в течение месяца.',
+        'Новый айти‑кластер в Татарстане создаст сотни рабочих мест': 'В Татарстане запускается новый IT-кластер, который объединит ведущие технологические компании региона. Проект направлен на развитие инновационной экосистемы и создание более 500 новых рабочих мест для специалистов в области информационных технологий.',
+        'На набережной Кабы завершают монтаж праздничной иллюминации': 'Рабочие завершают установку праздничной иллюминации на набережной реки Казанки. В этом году подсветка будет особенно яркой и включать интерактивные элементы, которые будут реагировать на движение прохожих.',
+        'Казанский университет запускает серию открытых лекций по дизайну медиа': 'Казанский федеральный университет объявил о запуске серии открытых лекций по дизайну медиа. Лекции будут проводить ведущие специалисты отрасли и будут доступны как для студентов, так и для всех желающих.',
+        'В аэропорту усилили работу волонтёров из‑за роста пассажиропотока': 'В связи с ростом пассажиропотока в предпраздничный период администрация аэропорта усилила работу волонтёрской службы. Добровольцы помогают пассажирам ориентироваться в терминале и предоставляют необходимую информацию.',
+        'Город добавил ночные автобусы к ключевым магистралям': 'Транспортная служба Казани расширила сеть ночных автобусных маршрутов, добавив рейсы на ключевых магистралях города. Это улучшит доступность общественного транспорта в ночное время для жителей и гостей города.',
+        'Музеи Казани готовят бесплатный вход для студентов в январе': 'Крупнейшие музеи Казани объявили о специальной акции для студентов: в течение всего января вход будет бесплатным при предъявлении студенческого билета. Акция приурочена к началу нового семестра и направлена на популяризацию культуры среди молодёжи.',
+        'Спортивные школы открывают зимние наборы на фигурное катание': 'Детские спортивные школы Казани объявили о наборе на занятия по фигурному катанию. Тренировки будут проходить на современных ледовых аренах под руководством опытных тренеров.',
+        'Креативные индустрии: стартует конкурс микрогрантов для дизайнеров': 'В Казани стартует конкурс микрогрантов для дизайнеров и представителей креативных индустрий. Победители получат финансовую поддержку для реализации своих проектов и развития творческого бизнеса.',
+        'IT-парк объявил набор на акселератор медиапроектов': 'IT-парк Казани объявил о наборе участников в новый акселератор, специализирующийся на медиапроектах. Программа включает менторскую поддержку, доступ к ресурсам и возможность получения инвестиций.',
+        'В Казани протестировали умные остановки с подогревом': 'В тестовом режиме запущены умные остановки общественного транспорта с системой подогрева. Новые остановки оснащены информационными дисплеями и USB-разъёмами для зарядки устройств.',
+        'Волонтёры запускают горячую линию помощи пожилым на выходных': 'Волонтёрские организации запустили специальную горячую линию для помощи пожилым людям в выходные дни. Добровольцы готовы помочь с покупками, доставкой лекарств и другими бытовыми вопросами.',
+        'Запустили рейс Казань — Баку дополнительно на праздничные дни': 'Авиакомпания добавила дополнительные рейсы между Казанью и Баку на праздничные дни. Это позволит удовлетворить возросший спрос на перелёты в преддверии новогодних праздников.',
+        'Открылась интерактивная экспозиция о казанских архитекторах': 'В одном из музеев Казани открылась новая интерактивная экспозиция, посвящённая истории казанской архитектуры и выдающимся архитекторам города. Выставка включает мультимедийные инсталляции и архивные материалы.',
+        'Лыжные трассы в окрестностях города готовят к ночным заездам': 'Лыжные трассы в окрестностях Казани готовятся к открытию ночных заездов. Трассы будут освещены и подготовлены для любителей зимних видов спорта.',
+        'Стартовал городской конкурс проектов по раздельному сбору': 'Администрация Казани объявила о старте конкурса проектов по улучшению системы раздельного сбора мусора. Победители получат гранты на реализацию своих идей.',
+        'Молодёжные центры проведут серию мастер-классов по анимации': 'Молодёжные центры Казани организуют серию мастер-классов по созданию анимации. Занятия будут проводить профессиональные аниматоры и будут доступны для всех желающих.',
+        'Метрополитен продлил работу на один час в выходные': 'Казанский метрополитен объявил о продлении работы на один час в выходные дни. Это улучшит доступность общественного транспорта для жителей и гостей города.',
+        'Запустили пилот по eSIM в муниципальных сервисах': 'В Казани запущен пилотный проект по использованию eSIM-карт в муниципальных сервисах. Это позволит упростить доступ к цифровым услугам города.',
+        'Казанские студенты выиграли олимпиаду по робототехнике': 'Студенты казанских вузов заняли первое место на всероссийской олимпиаде по робототехнике. Команда представила инновационный проект, который получил высокую оценку жюри.',
+        'Туроператоры отмечают рост спроса на зимние маршруты по Волге': 'Туроператоры Казани отмечают значительный рост спроса на зимние круизы по Волге. Популярность зимних речных путешествий продолжает расти среди туристов.',
+        'На площади Тысячелетия готовят большой ледовый городок': 'На главной площади Казани началась подготовка к открытию большого ледового городка. В этом году городок будет включать ледяные скульптуры, катки и развлекательные зоны.',
+        'Форум креативных индустрий собрал участников из 12 стран': 'В Казани завершился международный форум креативных индустрий, который собрал участников из 12 стран. На форуме обсуждались вопросы развития творческих индустрий и культурного обмена.',
+        'Город выделил гранты на освещение локальных культурных событий': 'Администрация Казани выделила специальные гранты для освещения локальных культурных событий. Средства пойдут на поддержку независимых медиа и культурных проектов.',
+        'В школах тестируют модуль по цифровой гигиене': 'В школах Казани началось тестирование нового образовательного модуля по цифровой гигиене. Программа направлена на обучение детей безопасному использованию интернета и защите персональных данных.',
+        'Запустили велопрокат с зимней резиной в центре': 'В центре Казани запущен велопрокат с велосипедами, оснащёнными зимней резиной. Это позволит жителям и гостям города использовать велосипедный транспорт даже в зимнее время.',
+        'Открылась новая галерея современного искусства на Баумана': 'На пешеходной улице Баумана открылась новая галерея современного искусства. Галерея будет представлять работы местных и международных художников.',
+        'Набережная Казанки получила новый световой дизайн': 'Набережная реки Казанки получила обновлённый световой дизайн. Новая подсветка создаёт особую атмосферу и делает набережную ещё более привлекательной для прогулок.',
+        'Сервисы каршеринга расширили зону на север города': 'Сервисы каршеринга в Казани расширили зону обслуживания, включив северные районы города. Это улучшит доступность краткосрочной аренды автомобилей для жителей этих районов.',
+        'Казань: Музыканты из Грузии и Ирана выбрали город для зимнего тура': 'Международные музыканты из Грузии и Ирана выбрали Казань в качестве одного из ключевых городов для своего зимнего концертного тура. Выступления пройдут в крупнейших концертных залах города и соберут поклонников этнической и современной музыки со всего региона.',
+        'В центре Казани открыли уличную фотовыставку о жизни казанцев': 'В историческом центре Казани открылась масштабная уличная фотовыставка, рассказывающая о повседневной жизни горожан. Экспозиция включает более 50 фотографий, сделанных местными фотографами, и будет доступна для просмотра в течение месяца.',
+        'В аэропорту Казани усилили работу волонтёров из‑за роста пассажиропотока': 'В связи с ростом пассажиропотока в предпраздничный период администрация аэропорта Казани усилила работу волонтёрской службы. Добровольцы помогают пассажирам ориентироваться в терминале и предоставляют необходимую информацию.',
+        'Казань добавила ночные автобусы к ключевым магистралям': 'Транспортная служба Казани расширила сеть ночных автобусных маршрутов, добавив рейсы на ключевых магистралях города. Это улучшит доступность общественного транспорта в ночное время для жителей и гостей города.',
+        'Спортивные школы Казани открывают зимние наборы на фигурное катание': 'Детские спортивные школы Казани объявили о наборе на занятия по фигурному катанию. Тренировки будут проходить на современных ледовых аренах под руководством опытных тренеров.',
+        'Креативные индустрии Казани: стартует конкурс микрогрантов для дизайнеров': 'В Казани стартует конкурс микрогрантов для дизайнеров и представителей креативных индустрий. Победители получат финансовую поддержку для реализации своих проектов и развития творческого бизнеса.'
+    };
+
+    function openNewsModal(article) {
+      const img = article.querySelector('.MatterBig_image__JzOt8');
+      const title = article.querySelector('.MatterBig_title__lSQFy');
+      const meta = article.querySelector('.MatterBig_meta__DPsSp');
+
+      if (img) {
+        modalImageContainer.innerHTML = `<img src="${img.src}" alt="${img.alt}" class="news-modal__image">`;
+      } else {
+        modalImageContainer.innerHTML = '';
+      }
+
+      modalTitle.textContent = title?.textContent || '';
+      
+      if (meta) {
+        modalMeta.innerHTML = meta.innerHTML;
+      } else {
+        modalMeta.innerHTML = '';
+      }
+
+      const articleTitle = title?.textContent.trim() || '';
+      modalText.textContent = fullTexts[articleTitle] || 'Подробная информация о событии будет доступна в ближайшее время. Следите за обновлениями на нашем сайте.';
+
+      newsModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeNewsModal() {
+      newsModal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    // Обработчики кликов на новостные блоки
+    newsArticles.forEach(article => {
+      article.addEventListener('click', (e) => {
+        e.preventDefault();
+        openNewsModal(article);
+      });
+    });
+
+    // Обработчик клика на главную новость
+    const mainNewsArticle = document.querySelector('.main-news-article');
+    if (mainNewsArticle) {
+      mainNewsArticle.addEventListener('click', (e) => {
+        e.preventDefault();
+        const title = mainNewsArticle.querySelector('.main-news-title');
+        const meta = mainNewsArticle.querySelector('.main-news-meta');
+        
+        // У главной новости нет картинки
+        modalImageContainer.innerHTML = '';
+        
+        modalTitle.textContent = title?.textContent || '';
+        
+        if (meta) {
+          modalMeta.innerHTML = meta.innerHTML;
+        } else {
+          modalMeta.innerHTML = '';
+        }
+
+        // Полный текст для главной новости
+        const articleTitle = title?.textContent.trim() || '';
+        modalText.textContent = fullTexts[articleTitle] || 'Подробная информация о событии будет доступна в ближайшее время. Следите за обновлениями на нашем сайте.';
+
+        newsModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    }
+
+    // Закрытие модального окна
+    closeModalBtn?.addEventListener('click', closeNewsModal);
+    newsModal?.querySelector('.news-modal__overlay')?.addEventListener('click', closeNewsModal);
+
+    // Закрытие по Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && newsModal.classList.contains('active')) {
+        closeNewsModal();
+      }
+    });
+
+    // Обработчики кликов на новости из "Топ 10 новостей"
+    const topNewsLinks = document.querySelectorAll('.top-news__link');
+    topNewsLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const newsItem = link.closest('.top-news__item');
+        const title = link.textContent.trim();
+        const rating = newsItem?.querySelector('.top-news__rating')?.textContent || '';
+        
+        // У топ-новостей нет картинки
+        modalImageContainer.innerHTML = '';
+        
+        modalTitle.textContent = title;
+        
+        // Создаём мета-данные с рейтингом
+        modalMeta.innerHTML = `
+          <span class="Rating_rating__tV72K">${rating}</span>
+        `;
+
+        // Получаем текст новости из объекта fullTexts
+        const articleTitle = title;
+        modalText.textContent = fullTexts[articleTitle] || 'Подробная информация о событии будет доступна в ближайшее время. Следите за обновлениями на нашем сайте.';
+
+        newsModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    // Инициализация обработчиков для новостей из ленты
+    attachNewsFeedHandlers();
+
+    // Функционал слайдера
+    function initSlider(sectionId) {
+      const container = document.querySelector(`#${sectionId}`).nextElementSibling;
+      if (!container || !container.classList.contains('slider-container')) {
+        console.log(`Container not found for ${sectionId}`);
+        return;
+      }
+
+      const content = container.querySelector('.slider-content');
+      const prevBtn = container.querySelector('.slider-arrow--prev');
+      const nextBtn = container.querySelector('.slider-arrow--next');
+
+      if (!content || !prevBtn || !nextBtn) {
+        console.log(`Elements not found for ${sectionId}:`, { content: !!content, prevBtn: !!prevBtn, nextBtn: !!nextBtn });
+        return;
+      }
+
+      let currentIndex = 0;
+      const articles = content.querySelectorAll('article');
+      const articlesPerView = 5; // Показывать по 5 статей за раз
+      const totalSlides = Math.ceil(articles.length / articlesPerView);
+
+      function updateSlider() {
+        const articleWidth = 280;
+        const gap = 20;
+        const slideWidth = articleWidth * articlesPerView + gap * (articlesPerView - 1);
+        const translateX = -currentIndex * slideWidth;
+        content.style.transform = `translateX(${translateX}px)`;
+
+        // Обновляем состояние кнопок
+        prevBtn.disabled = currentIndex === 0;
+        nextBtn.disabled = currentIndex === totalSlides - 1;
+      }
+
+      prevBtn.addEventListener('click', (e) => {
+        console.log('Prev button clicked for', sectionId);
+        e.preventDefault();
+        if (currentIndex > 0) {
+          currentIndex--;
+          updateSlider();
+        }
+      });
+
+      nextBtn.addEventListener('click', (e) => {
+        console.log('Next button clicked for', sectionId);
+        e.preventDefault();
+        if (currentIndex < totalSlides - 1) {
+          currentIndex++;
+          updateSlider();
+        }
+      });
+
+      // Инициализация
+      console.log(`Initializing slider for ${sectionId}:`, {
+        articlesCount: articles.length,
+        articlesPerView,
+        totalSlides,
+        currentIndex
+      });
+      updateSlider();
+    }
+
+    // Инициализируем слайдеры для всех разделов
+    initSlider('popular');
+    initSlider('exclusive');
+    initSlider('society');
+    initSlider('economy');
+  </script>
+</body>
+</html>
