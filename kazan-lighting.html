@@ -90,15 +90,18 @@
         </div>
       </div>
 
-      <div class="news-article__image-container">
-        <img src="{31FF7247-4EAD-4ED6-A714-92384F7FA2FD}.png" alt="Праздничная подсветка Казани" class="news-article__image">
-      </div>
-
       <div class="news-article__content">
+        <!-- Картинка справа -->
+        <div class="news-article__image-container">
+          <img src="{31FF7247-4EAD-4ED6-A714-92384F7FA2FD}.png" alt="Праздничная подсветка Казани" class="news-article__image">
+        </div>
+        
+        <!-- Текст слева от картинки -->
         <p>В преддверии новогодних праздников администрация Казани запустила масштабную программу подсветки городских улиц и площадей. Специалисты установили более 50 тысяч светодиодных гирлянд и декоративных элементов, которые создают праздничную атмосферу в историческом центре города.</p>
 
         <p>Особое внимание уделено набережной Казанки и площади Тысячелетия, где установлены тематические световые инсталляции. Жители и гости города могут насладиться красивой подсветкой до конца января.</p>
 
+        <!-- Далее все идет под картинкой -->
         <h2>Масштабная иллюминация</h2>
         <p>Программа подсветки включает:</p>
         <ul>
@@ -131,6 +134,39 @@
         </div>
       </div>
     </article>
+  </div>
+
+  <!-- Окно чата -->
+  <div class="chat-widget">
+    <div class="chat-window" id="chatWindow">
+      <div class="chat-header">
+        <h3 class="chat-header__title">💬 Комментарии</h3>
+        <button class="chat-header__close" id="chatClose">×</button>
+      </div>
+      <div class="chat-messages" id="chatMessages">
+        <div class="message message--incoming">
+          <p class="message__text">Первый!</p>
+          <span class="message__time">14:30</span>
+        </div>
+        <div class="message message--outgoing">
+          <p class="message__text">А когда в казани откроется новая ветка метро?</p>
+          <span class="message__time">14:32</span>
+        </div>
+        <div class="message message--incoming">
+          <p class="message__text">Подсветка работает? </p>
+          <span class="message__time">14:33</span>
+        </div>
+      </div>
+      <div class="chat-input">
+        <textarea class="chat-input__field" placeholder="Напишите сообщение..." rows="1"></textarea>
+        <button class="chat-input__button">Отправить</button>
+      </div>
+    </div>
+    <button class="chat-button" id="chatButton">
+      <span class="chat-button__icon">💬</span>
+      Онлайн-чат
+      <span class="chat-button__badge">3</span>
+    </button>
   </div>
 
   <!-- Кнопка "Наверх" -->
@@ -244,6 +280,96 @@
     scrollTopBtn.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+
+    // Логика чата
+    const chatButton = document.getElementById('chatButton');
+    const chatWindow = document.getElementById('chatWindow');
+    const chatClose = document.getElementById('chatClose');
+    const chatInput = document.querySelector('.chat-input__field');
+    const chatSend = document.querySelector('.chat-input__button');
+    const chatMessages = document.getElementById('chatMessages');
+
+    chatButton.addEventListener('click', () => {
+      chatWindow.classList.toggle('active');
+      chatButton.querySelector('.chat-button__badge').textContent = '0';
+    });
+
+    chatClose.addEventListener('click', () => {
+      chatWindow.classList.remove('active');
+    });
+
+    // Автоматическое увеличение высоты textarea
+    chatInput.addEventListener('input', function() {
+      this.style.height = 'auto';
+      this.style.height = (this.scrollHeight) + 'px';
+    });
+
+    // Отправка сообщения
+    chatSend.addEventListener('click', sendMessage);
+    chatInput.addEventListener('keypress', function(e) {
+      if (e.key === 'Enter' && !e.shiftKey) {
+        e.preventDefault();
+        sendMessage();
+      }
+    });
+
+    function sendMessage() {
+      const text = chatInput.value.trim();
+      if (!text) return;
+
+      // Добавляем исходящее сообщение
+      const messageDiv = document.createElement('div');
+      messageDiv.className = 'message message--outgoing';
+      
+      const messageText = document.createElement('p');
+      messageText.className = 'message__text';
+      messageText.textContent = text;
+      
+      const messageTime = document.createElement('span');
+      messageTime.className = 'message__time';
+      const now = new Date();
+      messageTime.textContent = `${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}`;
+      
+      messageDiv.appendChild(messageText);
+      messageDiv.appendChild(messageTime);
+      chatMessages.appendChild(messageDiv);
+      
+      // Очищаем поле ввода
+      chatInput.value = '';
+      chatInput.style.height = 'auto';
+      
+      // Прокручиваем вниз
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+      
+      // Имитируем ответ через 1-2 секунды
+      setTimeout(() => {
+        const replies = [
+          "Спасибо за вопрос! Мы скоро ответим.",
+          "Понятно. Уточню информацию и отвечу.",
+          "Интересный вопрос! Давайте обсудим подробнее.",
+          "Хорошо, я передал ваш вопрос специалисту."
+        ];
+        const reply = replies[Math.floor(Math.random() * replies.length)];
+        
+        const replyDiv = document.createElement('div');
+        replyDiv.className = 'message message--incoming';
+        
+        const replyText = document.createElement('p');
+        replyText.className = 'message__text';
+        replyText.textContent = reply;
+        
+        const replyTime = document.createElement('span');
+        replyTime.className = 'message__time';
+        const replyNow = new Date();
+        replyTime.textContent = `${replyNow.getHours().toString().padStart(2, '0')}:${replyNow.getMinutes().toString().padStart(2, '0')}`;
+        
+        replyDiv.appendChild(replyText);
+        replyDiv.appendChild(replyTime);
+        chatMessages.appendChild(replyDiv);
+        
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }, 1000 + Math.random() * 1000);
+    }
   </script>
 </body>
 </html>
