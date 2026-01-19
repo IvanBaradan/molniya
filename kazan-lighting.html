@@ -101,28 +101,13 @@
 
         <p>Особое внимание уделено набережной Казанки и площади Тысячелетия, где установлены тематические световые инсталляции. Жители и гости города могут насладиться красивой подсветкой до конца января.</p>
 
-        <!-- Далее все идет под картинкой -->
-        <h2>Масштабная иллюминация</h2>
-        <p>Программа подсветки включает:</p>
-        <ul>
-          <li>Более 50 тысяч светодиодных гирлянд</li>
-          <li>Декоративные элементы на центральных улицах</li>
-          <li>Тематические инсталляции на набережной Казанки</li>
-          <li>Подсветка площади Тысячелетия</li>
-          <li>Интерактивные световые элементы</li>
-        </ul>
+        <p>Программа подсветки включает более 50 тысяч светодиодных гирлянд, декоративные элементы на центральных улицах, тематические инсталляции на набережной Казанки и подсветку площади Тысячелетия. Также установлены интерактивные световые элементы, которые реагируют на движение прохожих.</p>
 
-        <p>Работы по установке иллюминации велись несколько месяцев. Были привлечены лучшие специалисты по световому дизайну из разных регионов России.</p>
+        <p>Работы по установке иллюминации велись несколько месяцев. Были привлечены лучшие специалисты по световому дизайну из разных регионов России. Все используемые материалы соответствуют современным экологическим стандартам. Светодиодные элементы потребляют минимум энергии и не наносят вреда окружающей среде.</p>
 
-        <h2>Безопасность и экология</h2>
-        <p>Все используемые материалы соответствуют современным экологическим стандартам. Светодиодные элементы потребляют минимум энергии и не наносят вреда окружающей среде.</p>
+        <p>Администрация города гарантирует безопасность всех инсталляций. Регулярно проводятся проверки и техническое обслуживание. Подсветка создает неповторимую атмосферу праздника в историческом центре Казани. Туристы и жители города смогут наслаждаться красивым видом до конца января.</p>
 
-        <p>Администрация города гарантирует безопасность всех инсталляций. Регулярно проводятся проверки и техническое обслуживание.</p>
-
-        <h2>Праздничная атмосфера</h2>
-        <p>Подсветка создает неповторимую атмосферу праздника в историческом центре Казани. Туристы и жители города смогут наслаждаться красивым видом до конца января.</p>
-
-        <p>Организаторы приглашают всех жителей и гостей города прогуляться по подсвеченным улицам и насладиться праздничным настроением.</p>
+        <p>Организаторы приглашают всех жителей и гостей города прогуляться по подсвеченным улицам и насладиться праздничным настроением. Для удобства горожан составлен специальный маршрут ночной прогулки, который охватывает все самые красивые подсвеченные места города.</p>
       </div>
 
       <div class="news-article__footer">
@@ -131,42 +116,53 @@
           <span class="chip">Праздник</span>
           <span class="chip">Иллюминация</span>
           <span class="chip">Новый год</span>
+          <span class="chip">Туризм</span>
+          <span class="chip">Городские проекты</span>
         </div>
       </div>
     </article>
   </div>
 
-  <!-- Окно чата -->
-  <div class="chat-widget">
-    <div class="chat-window" id="chatWindow">
-      <div class="chat-header">
-        <h3 class="chat-header__title">💬 Комментарии</h3>
-        <button class="chat-header__close" id="chatClose">×</button>
+  <!-- Секция комментариев -->
+  <div class="comments-section">
+    <div class="comments-header">
+      <div>
+        <h2 class="comments-title">Комментарии</h2>
+        <div class="comments-count" id="commentsCount">24 комментария</div>
       </div>
-      <div class="chat-messages" id="chatMessages">
-        <div class="message message--incoming">
-          <p class="message__text">Первый!</p>
-          <span class="message__time">14:30</span>
-        </div>
-        <div class="message message--outgoing">
-          <p class="message__text">А когда в казани откроется новая ветка метро?</p>
-          <span class="message__time">14:32</span>
-        </div>
-        <div class="message message--incoming">
-          <p class="message__text">Подсветка работает? </p>
-          <span class="message__time">14:33</span>
-        </div>
-      </div>
-      <div class="chat-input">
-        <textarea class="chat-input__field" placeholder="Напишите сообщение..." rows="1"></textarea>
-        <button class="chat-input__button">Отправить</button>
+      <div class="comments-sort">
+        <span class="comments-sort__label">Сортировать по:</span>
+        <select class="comments-sort__select" id="commentsSort">
+          <option value="newest">Сначала новые</option>
+          <option value="oldest">Сначала старые</option>
+          <option value="popular">Самые популярные</option>
+        </select>
       </div>
     </div>
-    <button class="chat-button" id="chatButton">
-      <span class="chat-button__icon">💬</span>
-      Онлайн-чат
-      <span class="chat-button__badge">3</span>
-    </button>
+
+    <!-- Форма добавления комментария -->
+    <div class="add-comment">
+      <div class="avatar" id="userAvatar">А</div>
+      <div class="comment-input-container">
+        <textarea class="comment-input" id="newCommentInput" placeholder="Оставьте комментарий..." rows="2"></textarea>
+        <div class="comment-buttons" id="commentButtons" style="display: none;">
+          <button class="comment-cancel" id="cancelComment">Отмена</button>
+          <button class="comment-submit" id="submitComment" disabled>Комментировать</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Список комментариев -->
+    <div class="comments-list" id="commentsList">
+      <!-- Комментарии будут добавляться сюда -->
+    </div>
+
+    <!-- Пагинация комментариев -->
+    <div class="comments-pagination">
+      <button class="comments-pagination__button" id="prevComments" disabled>‹ Назад</button>
+      <span class="comments-pagination__page">Страница <span id="currentPage">1</span> из <span id="totalPages">3</span></span>
+      <button class="comments-pagination__button" id="nextComments">Вперед ›</button>
+    </div>
   </div>
 
   <!-- Кнопка "Наверх" -->
@@ -280,96 +276,438 @@
     scrollTopBtn.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+    
 
-    // Логика чата
-    const chatButton = document.getElementById('chatButton');
-    const chatWindow = document.getElementById('chatWindow');
-    const chatClose = document.getElementById('chatClose');
-    const chatInput = document.querySelector('.chat-input__field');
-    const chatSend = document.querySelector('.chat-input__button');
-    const chatMessages = document.getElementById('chatMessages');
+    // ================== КОММЕНТАРИИ ==================
 
-    chatButton.addEventListener('click', () => {
-      chatWindow.classList.toggle('active');
-      chatButton.querySelector('.chat-button__badge').textContent = '0';
-    });
+    // Моковые данные комментариев
+    const mockComments = [
+      {
+        id: 1,
+        author: 'Иван Петров',
+        time: '2 часа назад',
+        text: 'Первый! Красиво получилось, вчера ходили с семьей - дети в восторге!',
+        likes: 42,
+        liked: true,
+        replies: [
+          {
+            id: 11,
+            author: 'Мария Смирнова',
+            time: '1 час назад',
+            text: 'Согласна, мы тоже вчера были. Особенно понравилась подсветка на набережной.',
+            likes: 18,
+            liked: false
+          }
+        ]
+      },
+      {
+        id: 2,
+        author: 'Алексей Козлов',
+        time: '3 часа назад',
+        text: 'А когда в Казани откроется новая ветка метро? Подсветка хороша, но транспорт важнее.',
+        likes: 15,
+        liked: false,
+        replies: []
+      },
+      {
+        id: 3,
+        author: 'Светлана Иванова',
+        time: '4 часа назад',
+        text: 'Подсветка работает каждый вечер? Хочу свозить родителей посмотреть.',
+        likes: 27,
+        liked: false,
+        replies: [
+          {
+            id: 31,
+            author: 'Администратор',
+            time: '3 часа назад',
+            text: 'Да, ежедневно с 17:00 до 23:00 до конца января. Приходите!',
+            likes: 9,
+            liked: true
+          }
+        ]
+      },
+      {
+        id: 4,
+        author: 'Дмитрий Соколов',
+        time: '5 часов назад',
+        text: 'Фотографии не передают всей красоты. Вживую намного эффектнее!',
+        likes: 56,
+        liked: true,
+        replies: []
+      },
+      {
+        id: 5,
+        author: 'Ольга Николаева',
+        time: '6 часов назад',
+        text: 'Молодцы! Такой красоты в городе давно не было. Поддерживаю такие инициативы.',
+        likes: 33,
+        liked: false,
+        replies: []
+      },
+      {
+        id: 6,
+        author: 'Павел Волков',
+        time: '7 часов назад',
+        text: 'А экскурсии будут? Хотелось бы с гидом пройти по всем подсвеченным местам.',
+        likes: 21,
+        liked: false,
+        replies: [
+          {
+            id: 61,
+            author: 'Турагентство "Волга"',
+            time: '6 часов назад',
+            text: 'Уже организуем! Следите за нашим расписанием на сайте.',
+            likes: 7,
+            liked: false
+          }
+        ]
+      },
+      {
+        id: 7,
+        author: 'Анна Кузнецова',
+        time: '8 часов назад',
+        text: 'Очень красиво! Вечером весь город преображается. Рекомендую всем посмотреть.',
+        likes: 48,
+        liked: true,
+        replies: []
+      },
+      {
+        id: 8,
+        author: 'Максим Орлов',
+        time: '9 часов назад',
+        text: 'Хорошо, что сделали не только в центре, но и в других районах.',
+        likes: 19,
+        liked: false,
+        replies: []
+      }
+    ];
 
-    chatClose.addEventListener('click', () => {
-      chatWindow.classList.remove('active');
-    });
+    // Элементы комментариев
+    const commentsList = document.getElementById('commentsList');
+    const commentsCount = document.getElementById('commentsCount');
+    const commentsSort = document.getElementById('commentsSort');
+    const newCommentInput = document.getElementById('newCommentInput');
+    const commentButtons = document.getElementById('commentButtons');
+    const cancelComment = document.getElementById('cancelComment');
+    const submitComment = document.getElementById('submitComment');
+    const prevComments = document.getElementById('prevComments');
+    const nextComments = document.getElementById('nextComments');
+    const currentPage = document.getElementById('currentPage');
+    const totalPages = document.getElementById('totalPages');
 
-    // Автоматическое увеличение высоты textarea
-    chatInput.addEventListener('input', function() {
-      this.style.height = 'auto';
-      this.style.height = (this.scrollHeight) + 'px';
-    });
+    let currentUser = { name: 'Аноним', avatar: 'А' };
+    let comments = [...mockComments];
+    let currentSort = 'newest';
+    let currentPageNum = 1;
+    const commentsPerPage = 5;
 
-    // Отправка сообщения
-    chatSend.addEventListener('click', sendMessage);
-    chatInput.addEventListener('keypress', function(e) {
-      if (e.key === 'Enter' && !e.shiftKey) {
-        e.preventDefault();
-        sendMessage();
+    // Инициализация комментариев
+    function initComments() {
+      updateCommentsCount();
+      renderComments();
+      setupEventListeners();
+    }
+
+    // Обновление счетчика комментариев
+    function updateCommentsCount() {
+      const totalComments = comments.reduce((total, comment) => total + 1 + comment.replies.length, 0);
+      const word = getRussianWordForm(totalComments, ['комментарий', 'комментария', 'комментариев']);
+      commentsCount.textContent = `${totalComments} ${word}`;
+    }
+
+    // Функция для правильного склонения слов
+    function getRussianWordForm(number, words) {
+      const cases = [2, 0, 1, 1, 1, 2];
+      return words[(number % 100 > 4 && number % 100 < 20) ? 2 : cases[(number % 10 < 5) ? number % 10 : 5]];
+    }
+
+    // Рендеринг комментариев
+    function renderComments() {
+      // Сортируем комментарии
+      let sortedComments = [...comments];
+      switch (currentSort) {
+        case 'newest':
+          sortedComments.sort((a, b) => b.id - a.id);
+          break;
+        case 'oldest':
+          sortedComments.sort((a, b) => a.id - b.id);
+          break;
+        case 'popular':
+          sortedComments.sort((a, b) => b.likes - a.likes);
+          break;
+      }
+
+      // Пагинация
+      const totalPagesCount = Math.ceil(sortedComments.length / commentsPerPage);
+      totalPages.textContent = totalPagesCount;
+      
+      const startIndex = (currentPageNum - 1) * commentsPerPage;
+      const endIndex = startIndex + commentsPerPage;
+      const paginatedComments = sortedComments.slice(startIndex, endIndex);
+
+      // Очищаем список
+      commentsList.innerHTML = '';
+
+      // Добавляем комментарии
+      paginatedComments.forEach(comment => {
+        const commentElement = createCommentElement(comment);
+        commentsList.appendChild(commentElement);
+      });
+
+      // Обновляем состояние кнопок пагинации
+      prevComments.disabled = currentPageNum === 1;
+      nextComments.disabled = currentPageNum === totalPagesCount;
+      currentPage.textContent = currentPageNum;
+    }
+
+    // Создание элемента комментария
+    function createCommentElement(comment) {
+      const commentDiv = document.createElement('div');
+      commentDiv.className = 'comment';
+      commentDiv.dataset.id = comment.id;
+
+      const authorInitial = comment.author.charAt(0).toUpperCase();
+
+      commentDiv.innerHTML = `
+        <div class="comment__avatar" style="background: ${getColorFromName(comment.author)}">${authorInitial}</div>
+        <div class="comment__content">
+          <div class="comment__header">
+            <span class="comment__author">${comment.author}</span>
+            <span class="comment__time">${comment.time}</span>
+          </div>
+          <p class="comment__text">${comment.text}</p>
+          <div class="comment__actions">
+            <button class="comment__action ${comment.liked ? 'comment__action--liked' : ''}" data-action="like">
+              <span class="comment__action-icon">👍</span>
+              <span class="comment__action-text">${comment.likes}</span>
+            </button>
+            <button class="comment__action" data-action="reply">
+              <span class="comment__action-icon">↩️</span>
+              <span class="comment__action-text">Ответить</span>
+            </button>
+          </div>
+          ${comment.replies.length > 0 ? `
+            <div class="comment__replies">
+              ${comment.replies.map(reply => `
+                <div class="comment">
+                  <div class="comment__avatar" style="background: ${getColorFromName(reply.author)}">${reply.author.charAt(0).toUpperCase()}</div>
+                  <div class="comment__content">
+                    <div class="comment__header">
+                      <span class="comment__author">${reply.author}</span>
+                      <span class="comment__time">${reply.time}</span>
+                    </div>
+                    <p class="comment__text">${reply.text}</p>
+                    <div class="comment__actions">
+                      <button class="comment__action ${reply.liked ? 'comment__action--liked' : ''}" data-action="like" data-reply-id="${reply.id}">
+                        <span class="comment__action-icon">👍</span>
+                        <span class="comment__action-text">${reply.likes}</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          ` : ''}
+        </div>
+      `;
+
+      return commentDiv;
+    }
+
+    // Генерация цвета по имени
+    function getColorFromName(name) {
+      const colors = ['#FF6B6B', '#4ECDC4', '#FFD166', '#06D6A0', '#118AB2', '#EF476F', '#073B4C'];
+      const index = name.charCodeAt(0) % colors.length;
+      return colors[index];
+    }
+
+    // Настройка обработчиков событий
+    function setupEventListeners() {
+      // Сортировка
+      commentsSort.addEventListener('change', (e) => {
+        currentSort = e.target.value;
+        currentPageNum = 1;
+        renderComments();
+      });
+
+      // Поле ввода комментария
+      newCommentInput.addEventListener('input', (e) => {
+        const text = e.target.value.trim();
+        submitComment.disabled = text.length === 0;
+        
+        if (text.length > 0 && commentButtons.style.display === 'none') {
+          commentButtons.style.display = 'flex';
+        }
+      });
+
+      newCommentInput.addEventListener('focus', () => {
+        if (newCommentInput.value.trim().length > 0) {
+          commentButtons.style.display = 'flex';
+        }
+      });
+
+      // Кнопки формы комментария
+      cancelComment.addEventListener('click', () => {
+        newCommentInput.value = '';
+        commentButtons.style.display = 'none';
+        submitComment.disabled = true;
+      });
+
+      submitComment.addEventListener('click', addNewComment);
+
+      // Пагинация
+      prevComments.addEventListener('click', () => {
+        if (currentPageNum > 1) {
+          currentPageNum--;
+          renderComments();
+          window.scrollTo({
+            top: commentsSection.offsetTop - 100,
+            behavior: 'smooth'
+          });
+        }
+      });
+
+      nextComments.addEventListener('click', () => {
+        const totalPagesCount = Math.ceil(comments.length / commentsPerPage);
+        if (currentPageNum < totalPagesCount) {
+          currentPageNum++;
+          renderComments();
+          window.scrollTo({
+            top: commentsSection.offsetTop - 100,
+            behavior: 'smooth'
+          });
+        }
+      });
+    }
+
+    // Добавление нового комментария
+    function addNewComment() {
+      const text = newCommentInput.value.trim();
+      if (!text) return;
+
+      const newComment = {
+        id: comments.length > 0 ? Math.max(...comments.map(c => c.id)) + 1 : 1,
+        author: currentUser.name,
+        time: 'Только что',
+        text: text,
+        likes: 0,
+        liked: false,
+        replies: []
+      };
+
+      comments.unshift(newComment);
+      
+      // Сбрасываем форму
+      newCommentInput.value = '';
+      commentButtons.style.display = 'none';
+      submitComment.disabled = true;
+      
+      // Обновляем отображение
+      updateCommentsCount();
+      currentPageNum = 1;
+      renderComments();
+      
+      // Прокручиваем к началу комментариев
+      const commentsSection = document.querySelector('.comments-section');
+      window.scrollTo({
+        top: commentsSection.offsetTop - 100,
+        behavior: 'smooth'
+      });
+    }
+
+    // Обработка кликов по действиям комментариев
+    document.addEventListener('click', (e) => {
+      // Лайки
+      if (e.target.closest('[data-action="like"]')) {
+        const button = e.target.closest('[data-action="like"]');
+        const commentId = button.closest('.comment').dataset.id;
+        const replyId = button.dataset.replyId;
+        
+        if (replyId) {
+          // Лайк ответа
+          const comment = comments.find(c => c.id === parseInt(commentId));
+          if (comment) {
+            const reply = comment.replies.find(r => r.id === parseInt(replyId));
+            if (reply) {
+              reply.liked = !reply.liked;
+              reply.likes += reply.liked ? 1 : -1;
+              renderComments();
+            }
+          }
+        } else {
+          // Лайк основного комментария
+          const comment = comments.find(c => c.id === parseInt(commentId));
+          if (comment) {
+            comment.liked = !comment.liked;
+            comment.likes += comment.liked ? 1 : -1;
+            renderComments();
+          }
+        }
+      }
+      
+      // Ответы
+      if (e.target.closest('[data-action="reply"]')) {
+        const commentId = e.target.closest('.comment').dataset.id;
+        newCommentInput.focus();
+        newCommentInput.value = `@${comments.find(c => c.id === parseInt(commentId)).author}, `;
+        commentButtons.style.display = 'flex';
+        submitComment.disabled = false;
       }
     });
 
-    function sendMessage() {
-      const text = chatInput.value.trim();
-      if (!text) return;
+    // Инициализация при загрузке
+    document.addEventListener('DOMContentLoaded', () => {
+      initComments();
+      
+      // Обновляем аватар пользователя
+      const userAvatar = document.getElementById('userAvatar');
+      userAvatar.textContent = currentUser.avatar;
+      userAvatar.style.background = getColorFromName(currentUser.name);
+    });
 
-      // Добавляем исходящее сообщение
-      const messageDiv = document.createElement('div');
-      messageDiv.className = 'message message--outgoing';
+    // ================== МАСШТАБИРОВАНИЕ ПРИ ZOOM ==================
+
+    let scaleTimeout;
+    window.addEventListener('resize', () => {
+      clearTimeout(scaleTimeout);
+      scaleTimeout = setTimeout(handleZoom, 100);
+    });
+
+    function handleZoom() {
+      const zoomLevel = window.outerWidth / window.innerWidth;
+      const articleContainer = document.querySelector('.news-article-container');
+      const article = document.querySelector('.news-article');
+      const imageContainer = document.querySelector('.news-article__image-container');
       
-      const messageText = document.createElement('p');
-      messageText.className = 'message__text';
-      messageText.textContent = text;
-      
-      const messageTime = document.createElement('span');
-      messageTime.className = 'message__time';
-      const now = new Date();
-      messageTime.textContent = `${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}`;
-      
-      messageDiv.appendChild(messageText);
-      messageDiv.appendChild(messageTime);
-      chatMessages.appendChild(messageDiv);
-      
-      // Очищаем поле ввода
-      chatInput.value = '';
-      chatInput.style.height = 'auto';
-      
-      // Прокручиваем вниз
-      chatMessages.scrollTop = chatMessages.scrollHeight;
-      
-      // Имитируем ответ через 1-2 секунды
-      setTimeout(() => {
-        const replies = [
-          "Спасибо за вопрос! Мы скоро ответим.",
-          "Понятно. Уточню информацию и отвечу.",
-          "Интересный вопрос! Давайте обсудим подробнее.",
-          "Хорошо, я передал ваш вопрос специалисту."
-        ];
-        const reply = replies[Math.floor(Math.random() * replies.length)];
+      if (zoomLevel < 1) {
+        // Увеличение (zoom in)
+        const scale = 1 + (1 - zoomLevel) * 0.3;
+        article.style.transform = `scale(${Math.min(scale, 1.2)})`;
+        article.style.transformOrigin = 'center top';
+      } else if (zoomLevel > 1) {
+        // Уменьшение (zoom out)
+        const scale = 1 - (zoomLevel - 1) * 0.2;
+        article.style.transform = `scale(${Math.max(scale, 0.8)})`;
+        article.style.transformOrigin = 'center top';
         
-        const replyDiv = document.createElement('div');
-        replyDiv.className = 'message message--incoming';
-        
-        const replyText = document.createElement('p');
-        replyText.className = 'message__text';
-        replyText.textContent = reply;
-        
-        const replyTime = document.createElement('span');
-        replyTime.className = 'message__time';
-        const replyNow = new Date();
-        replyTime.textContent = `${replyNow.getHours().toString().padStart(2, '0')}:${replyNow.getMinutes().toString().padStart(2, '0')}`;
-        
-        replyDiv.appendChild(replyText);
-        replyDiv.appendChild(replyTime);
-        chatMessages.appendChild(replyDiv);
-        
-        chatMessages.scrollTop = chatMessages.scrollHeight;
-      }, 1000 + Math.random() * 1000);
+        // Уменьшаем размер изображения при сильном уменьшении
+        if (zoomLevel > 1.5 && imageContainer) {
+          imageContainer.style.width = '35%';
+        } else if (imageContainer) {
+          imageContainer.style.width = '45%';
+        }
+      } else {
+        // Нормальный масштаб
+        article.style.transform = 'scale(1)';
+        if (imageContainer) {
+          imageContainer.style.width = '45%';
+        }
+      }
     }
+
+    // Инициализация масштабирования
+    handleZoom();
   </script>
 </body>
 </html>
